@@ -11,18 +11,6 @@ Home Content
     <?php include "modules/horizontal-slider.php" ?>
 
     <!--=====================================
-    Home Features
-    ======================================-->  
-
-    <?php include "modules/features.php" ?>
-
-    <!--=====================================
-    Home Promotions
-    ======================================-->  
-
-    <?php include "modules/default-banner.php" ?>
-
-    <!--=====================================
     Home Deal Hot Today
     ======================================-->  
 
