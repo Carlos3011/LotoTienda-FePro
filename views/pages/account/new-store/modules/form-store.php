@@ -118,7 +118,7 @@ Crear tienda
 
         <div class="form-group">
 
-            <label>Store Country<sup class="text-danger">*</sup></label>
+            <label>Store Campus<sup class="text-danger">*</sup></label>
 
             <?php
 
@@ -142,7 +142,7 @@ Crear tienda
 
                 <?php else: ?>
 
-                	<option value>Select Country</option>
+                	<option value>Select Campus</option>
 
                 <?php endif ?>
 
@@ -167,7 +167,7 @@ Crear tienda
 
         <div class="form-group">
 
-            <label>Store City<sup>*</sup></label>
+            <label>Store of the faculty<sup>*</sup></label>
 
             <div class="form-group__content">
 
@@ -247,7 +247,7 @@ Crear tienda
 
         <div class="form-group">
 
-            <label>Store Address<sup>*</sup></label>
+            <label>Store Delivery Locations<sup>*</sup></label>
 
             <div class="form-group__content">
 
