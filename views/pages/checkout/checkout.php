@@ -54,7 +54,7 @@ Breadcrumb
 
             <li><a href="<?php echo $path ?>shopping-cart">Shopping cart</a></li>
 
-            <li>Checkout</li>
+            <li>Finish payment</li>
 
         </ul>
 
@@ -63,7 +63,7 @@ Breadcrumb
 </div>
 
 <!--=====================================
-Checkout
+Finish payment
 ======================================--> 
 
 <div class="ps-checkout ps-section--shopping">
@@ -72,7 +72,7 @@ Checkout
 
         <div class="ps-section__header">
 
-            <h1>Checkout</h1>
+            <h1>Finish payment</h1>
 
         </div>
 
@@ -131,12 +131,12 @@ Checkout
                             </div>
 
                             <!--=====================================
-							Pais del usuario
+							Campus del usuario
 							======================================--> 
 
                             <div class="form-group">
 
-                                <label>Country<sup>*</sup></label>
+                                <label>Campus<sup>*</sup></label>
 
                                 <?php
 
@@ -159,7 +159,7 @@ Checkout
 
                                     <?php else: ?>
 
-                                    	<option value>Select Country</option>
+                                    	<option value>Select Campus</option>
 
                                     <?php endif ?>
 
@@ -179,12 +179,12 @@ Checkout
                             </div>
 
                             <!--=====================================
-							Ciudad del usuario
+							Facultad del usuario
 							======================================--> 
 
                             <div class="form-group">
 
-                                <label>City<sup>*</sup></label>
+                                <label>Faculty<sup>*</sup></label>
 
                                 <div class="form-group__content">
 
@@ -264,7 +264,7 @@ Checkout
 
                             <div class="form-group">
 
-                                <label>Address<sup>*</sup></label>
+                                <label>Delivery Location<sup>*</sup></label>
 
                                 <div class="form-group__content">
  
@@ -286,7 +286,7 @@ Checkout
 
                             <!--=====================================
 							Guardar Dirección del usuario
-							======================================--> 
+							======================================
 
                             <div class="form-group">
 
@@ -298,7 +298,7 @@ Checkout
 
                                 </div>
 
-                            </div>
+                            </div>--> 
 
                             <!--=====================================
 							Información adicional de la orden
@@ -540,7 +540,7 @@ Checkout
 
                                 </div>
 
-                                <div class="form-group">
+                                <!--<div class="form-group">
 
                                     <div class="ps-radio">
 
@@ -556,7 +556,7 @@ Checkout
 
                                     </div>
 
-                                </div>
+                                </div>   Des comentar solo si se quiere agregar el metodo de pago con payu-->   
 
                                 <div class="form-group">
 
@@ -598,7 +598,7 @@ Checkout
 
 /*=============================================
 Recibir variables de PAYU página de respuesta
-=============================================*/
+=============================================
 
 if (isset($_REQUEST['transactionState']) && $_REQUEST['transactionState'] == 4 && isset($_REQUEST['reference_pol'])) {
 
@@ -606,11 +606,11 @@ if (isset($_REQUEST['transactionState']) && $_REQUEST['transactionState'] == 4 &
 
     endCheckout($_REQUEST['reference_pol']);
 
-}
+}*/
 
 /*=============================================
 Recibir variables de PAYU página de confirmación
-=============================================*/
+=============================================
 
 if (isset($_REQUEST['state_pol']) && $_REQUEST['state_pol'] == 4 && isset($_REQUEST['reference_pol'])) {
 
@@ -618,7 +618,7 @@ if (isset($_REQUEST['state_pol']) && $_REQUEST['state_pol'] == 4 && isset($_REQU
 
     endCheckout($_REQUEST['reference_pol']);
 
-}
+}*/
 
 /*=============================================
 Recibir variables de MP
