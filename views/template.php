@@ -526,12 +526,6 @@ if(!empty($urlParams[0])){
 	<script src="https://translate.yandex.net/website-widget/v1/widget.js?widgetId=ytWidget&pageLang=en&widgetTheme=light&autoMode=false" type="text/javascript"></script>
 
   
-	<!--=====================================
-	Header Promotion
-	======================================-->
-
-	<?php include "modules/top-banner.php" ?>
-
      <!--=====================================
     Header
     ======================================-->

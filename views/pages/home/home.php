@@ -5,12 +5,6 @@ Home Content
 <div id="homepage-6">
 
     <!--=====================================
-    Home Banner
-    ======================================-->  
-
-    <?php include "modules/horizontal-slider.php" ?>
-
-    <!--=====================================
     Home Deal Hot Today
     ======================================-->  
 
