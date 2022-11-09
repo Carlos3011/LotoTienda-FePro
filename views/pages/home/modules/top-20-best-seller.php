@@ -30,7 +30,7 @@ for($i = 0; $i < ceil(count($topSalesProducts)/4); $i++){
 
     <aside class="widget widget_best-sale" data-mh="dealhot">
 
-        <h3 class="widget-title">Top 20 Best Seller</h3>
+        <h3 class="widget-title">Top 20 mas vendidos</h3>
 
         <div class="widget__content">
 

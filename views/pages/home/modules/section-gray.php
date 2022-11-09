@@ -137,29 +137,6 @@ Load
             ?>
 
             <!--=====================================
-    		Vertical Slider Category
-    		======================================-->  
-
-            <div class="ps-block__slider">
-
-                <div class="ps-carousel--product-box owl-slider" data-owl-auto="true" data-owl-loop="true" data-owl-speed="7000" data-owl-gap="0" data-owl-nav="true" data-owl-dots="true" data-owl-item="1" data-owl-item-xs="1" data-owl-item-sm="1" data-owl-item-md="1" data-owl-item-lg="1" data-owl-duration="500" data-owl-mousedrag="off">
-
-                    <?php foreach ($listProducts as $index => $item): ?>
-
-                        <a href="<?php echo $path.$item->url_product ?>">
-
-                            <img src="img/products/<?php echo $value->url_category ?>/vertical/<?php echo $item->vertical_slider_product ?>" alt="<?php echo $item->name_product ?>">
-
-                        </a>
-                        
-                    <?php endforeach ?>
-
-
-                </div>
-
-            </div>
-
-            <!--=====================================
     		Block Product Box
     		======================================-->  
 
@@ -211,9 +188,6 @@ Load
                                 );
 
                                 ?>
-
-
-                                %
 
                             </div>
 

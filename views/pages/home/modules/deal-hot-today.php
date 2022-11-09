@@ -132,7 +132,7 @@ if(count($hotProducts)>10){
 
         <div class="ps-block__header">
 
-            <h3>Deal hot today</h3>
+            <h3>Ofertas calientes del dia</h3>
 
             <div class="ps-block__navigation">
             	<a class="ps-carousel__prev" href=".ps-carousel--deal-hot">
@@ -354,7 +354,7 @@ if(count($hotProducts)>10){
 
                                     <div class="ps-product__specification">
 
-                                        <p>Status:<strong class="in-stock"> In Stock</strong></p>
+                                        <p>Estado:<strong class="in-stock"> en stock</strong></p>
 
                                     </div>
 
@@ -366,24 +366,24 @@ if(count($hotProducts)>10){
 
                                 <div class="ps-product__expires">
 
-                                    <p>Expires In</p>
+                                    <p>Expira en</p>
 
                                     <ul class="ps-countdown" data-time="<?php echo json_decode($value->offer_product,true)[2] ?>">
 
                                         <li><span class="days"></span>
-                                            <p>Days</p>
+                                            <p>Dias</p>
                                         </li>
 
                                         <li><span class="hours"></span>
-                                            <p>Hours</p>
+                                            <p>Horas</p>
                                         </li>
 
                                         <li><span class="minutes"></span>
-                                            <p>Minutes</p>
+                                            <p>Minutos</p>
                                         </li>
 
                                         <li><span class="seconds"></span>
-                                            <p>Seconds</p>
+                                            <p>Segundos</p>
                                         </li>
 
                                     </ul>

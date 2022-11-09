@@ -246,7 +246,7 @@ if(!empty($urlParams[0])){
 			if(isset($urlProduct->status) && $urlProduct->status == 200){
 
 				$name = $urlProduct->results[0]->name_product;
-				$title = "MarketPlace | ".$urlProduct->results[0]->name_product;
+				$title = "LoboTienda | ".$urlProduct->results[0]->name_product;
 				$description = "";
 
 				foreach (json_decode($urlProduct->results[0]->summary_product,true) as $key => $value) {
@@ -274,8 +274,8 @@ if(!empty($urlParams[0])){
 
 				$name = "Lobotienda";
 				$title = "LoboTienda | Home";
-				$description = "Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Cras mattis consectetur purus sit amet fermentum.";
-				$keywords = "Marketplace, Consumer Electric, Clothing and Apparel, Home, Garden and Kitchen, Health and Beauty, Jewelry and Watches, Computer and Technology";
+				$description = "Venta y trueque de productos, pagina dirgida a la comunidad universita de la Benemerita Universidad Autonoma de Puebla";
+				$keywords = "LoboTienda, Electronicos, Ropa, Papeleria, Salud y belleza, Accesorios, Computo";
 				$image = $path."views/img/bg/about-us.jpg";
 				$url = $path;
 
@@ -285,8 +285,8 @@ if(!empty($urlParams[0])){
 
 			$name = "Lobotienda";
 			$title = "LoboTienda | Home";
-			$description = "Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Cras mattis consectetur purus sit amet fermentum.";
-			$keywords = "Marketplace, Consumer Electric, Clothing and Apparel, Home, Garden and Kitchen, Health and Beauty, Jewelry and Watches, Computer and Technology";
+			$description = "Venta y trueque de productos, pagina dirgida a la comunidad universita de la Benemerita Universidad Autonoma de Puebla";
+			$keywords = "LoboTienda, Electronicos, Ropa, Papeleria, Salud y belleza, Accesorios, Computo";
 			$image = $path."views/img/bg/about-us.jpg";
 			$url = $path;
 

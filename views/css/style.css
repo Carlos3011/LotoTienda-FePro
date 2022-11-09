@@ -4348,7 +4348,7 @@ textarea.form-control {
 .ps-block--products-of-category .ps-block__categories {
   position: relative;
   padding: 30px 20px 40px 30px;
-  background-color: #ffffff;
+  background-color: #00b5e2;
   max-width: 20%;
 }
 
@@ -4356,13 +4356,14 @@ textarea.form-control {
   margin-bottom: 35px;
   font-weight: 400;
   font-size: 24px;
+  color: #fff
 }
 
 .ps-block--products-of-category .ps-block__categories ul li a {
   display: block;
   padding: 3px 0;
   line-height: 20px;
-  color: #000;
+  color: #fff;
 }
 
 .ps-block--products-of-category .ps-block__categories ul li a:hover {
@@ -4374,7 +4375,7 @@ textarea.form-control {
   bottom: 45px;
   left: 30px;
   font-style: italic;
-  color: #666;
+  color: rgba(223, 223, 223, 0.952);
 }
 
 .ps-block--products-of-category .ps-block__slider {
