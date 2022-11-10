@@ -4,7 +4,7 @@
 
         <ul class="breadcrumb">
 
-            <li><a href="/">Home</a></li>
+            <li><a href="/">Inicio</a></li>
 
             <li><?php echo TemplateController::capitalize($urlParams[0]) ?></li>
             	

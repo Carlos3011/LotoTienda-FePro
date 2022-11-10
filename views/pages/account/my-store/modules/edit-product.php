@@ -28,8 +28,8 @@ Editar Producto
     	
     	<!-- Modal Header -->
         <div class="modal-header">
-            <h4 class="modal-title text-center">Edit Product</h4>
-            <a href="<?= TemplateController::path() ?>account&my-store#vendor-store" class="btn btn-dark">Cancel</a>
+            <h4 class="modal-title text-center">Editar Producto</h4>
+            <a href="<?= TemplateController::path() ?>account&my-store#vendor-store" class="btn btn-dark">Cancelar</a>
         </div>
 
         <!-- Modal body -->
@@ -41,7 +41,7 @@ Editar Producto
 
             <div class="form-group">
             
-                <label>Product Name<sup class="text-danger">*</sup></label>
+                <label>Nombre del producto<sup class="text-danger">*</sup></label>
 
                 <div class="form-group__content">
                     
@@ -52,8 +52,8 @@ Editar Producto
                     readonly
                     required>
 
-                    <div class="valid-feedback">Valid.</div>
-                    <div class="invalid-feedback">Please fill out this field.</div>
+                    <div class="valid-feedback">Valido.</div>
+                    <div class="invalid-feedback">Por favor rellene este campo.</div>
 
                 </div>
 
@@ -65,7 +65,7 @@ Editar Producto
 
             <div class="form-group">
             
-                <label>Product Url<sup class="text-danger">*</sup></label>
+                <label>Url del Producto<sup class="text-danger">*</sup></label>
 
                 <div class="form-group__content">
                     
@@ -76,8 +76,8 @@ Editar Producto
                     readonly
                     required>
 
-                    <div class="valid-feedback">Valid.</div>
-                    <div class="invalid-feedback">Please fill out this field.</div>
+                    <div class="valid-feedback">Valido.</div>
+                    <div class="invalid-feedback">Por favor rellene este campo.</div>
 
                 </div>
 
@@ -89,7 +89,7 @@ Editar Producto
 
             <div class="form-group">
                 
-                <label>Product Category<sup class="text-danger">*</sup></label>
+                <label>Categoria del producto<sup class="text-danger">*</sup></label>
 
                 <div class="form-group__content">
                     
@@ -103,8 +103,8 @@ Editar Producto
 
                     </select>
 
-                    <div class="valid-feedback">Valid.</div>
-                    <div class="invalid-feedback">Please fill out this field.</div>
+                    <div class="valid-feedback">Valido.</div>
+                    <div class="invalid-feedback">Por favor rellene este campo.</div>
 
                 </div>
             </div>
@@ -115,7 +115,7 @@ Editar Producto
 
             <div class="form-group">
             
-                <label>Product SubCategory<sup class="text-danger">*</sup></label>
+                <label>Subcategoria del producto<sup class="text-danger">*</sup></label>
 
                 <div class="form-group__content">
                     
@@ -129,8 +129,8 @@ Editar Producto
 
                     </select>
 
-                    <div class="valid-feedback">Valid.</div>
-                    <div class="invalid-feedback">Please fill out this field.</div>
+                    <div class="valid-feedback">Valido.</div>
+                    <div class="invalid-feedback">Por favor rellene este campo.</div>
 
                 </div>
 
@@ -142,7 +142,7 @@ Editar Producto
 
             <div class="form-group">
                 
-                <label>Product Description<sup class="text-danger">*</sup></label>
+                <label>Descripcion del producto<sup class="text-danger">*</sup></label>
 
                 <textarea
                 class="summernote editSummernote"
@@ -153,8 +153,8 @@ Editar Producto
     
                 </textarea>
 
-                <div class="valid-feedback">Valid.</div>
-                <div class="invalid-feedback">Please fill out this field.</div>
+                <div class="valid-feedback">Valido.</div>
+                <div class="invalid-feedback">Por favor rellene este campo.</div>
 
             </div>
 
@@ -164,7 +164,7 @@ Editar Producto
 
             <div class="form-group">
                 
-                <label>Product Summary<sup class="text-danger">*</sup> Ex: 20 hours of portable capabilities</label>
+                <label>Resumen del producto<sup class="text-danger">*</sup> Ex: 20 horas de autonomia</label>
 
                 <?php foreach (json_decode($product->summary_product, true) as $key => $value): ?>
 
@@ -187,14 +187,14 @@ Editar Producto
 	                    value="<?= $value ?>"
 	                    required>
 
-	                    <div class="valid-feedback">Valid.</div>
-	                    <div class="invalid-feedback">Please fill out this field.</div>
+	                    <div class="valid-feedback">Valido.</div>
+	                    <div class="invalid-feedback">Por favor rellene este campo.</div>
 
                 	</div>
 
                  <?php endforeach ?>
 
-                <button type="button" class="btn btn-primary mb-2" onclick="addInput(this, 'inputSummary')">Add Summary</button>
+                <button type="button" class="btn btn-primary mb-2" onclick="addInput(this, 'inputSummary')">Agregar Resumen</button>
 
             </div>
 
@@ -204,7 +204,7 @@ Editar Producto
 
             <div class="form-group">
                 
-                <label>Product Details<sup class="text-danger">*</sup> Ex: <strong>Title:</strong> Bluetooth, <strong>Value:</strong> Yes</label>
+                <label>Detalles del producto<sup class="text-danger">*</sup> Ex: <strong>Titulo:</strong> Bluetooth, <strong>Valor:</strong> Si</label>
 
                 <?php foreach (json_decode($product->details_product, true) as $key => $value): ?>
 
@@ -226,7 +226,7 @@ Editar Producto
 
 	                        <div class="input-group-append">
 	                            <span class="input-group-text">
-	                                Title:
+	                                TituloÑ
 	                            </span>
 	                        </div>
 
@@ -239,8 +239,8 @@ Editar Producto
 	                        value="<?= $value["title"] ?>"
 	                        required>
 
-	                        <div class="valid-feedback">Valid.</div>
-	                        <div class="invalid-feedback">Please fill out this field.</div>
+	                        <div class="valid-feedback">Valido.</div>
+	                        <div class="invalid-feedback">Por favor rellene este campo.</div>
 
 	                    </div>
 
@@ -252,7 +252,7 @@ Editar Producto
 
 	                        <div class="input-group-append">
 	                            <span class="input-group-text">
-	                                 Value:
+	                                 Valor:
 	                            </span>
 	                        </div>
 
@@ -265,8 +265,8 @@ Editar Producto
 	                        value="<?= $value["value"] ?>"
 	                        required>
 
-	                        <div class="valid-feedback">Valid.</div>
-	                        <div class="invalid-feedback">Please fill out this field.</div>
+	                        <div class="valid-feedback">Valido.</div>
+	                        <div class="invalid-feedback">Por favor rellene este campo.</div>
 
 	                    </div>
 
@@ -274,7 +274,7 @@ Editar Producto
 
 	            <?php endforeach ?> 
 
-                <button type="button" class="btn btn-primary mb-2" onclick="addInput(this, 'inputDetails')">Add Details</button>
+                <button type="button" class="btn btn-primary mb-2" onclick="addInput(this, 'inputDetails')">Agregar detalles</button>
 
             </div>
 
@@ -285,7 +285,7 @@ Editar Producto
 
             <div class="form-group">
                 
-                <label>Product Specifications Ex: <strong>Type:</strong> Color, <strong>Values:</strong> Black, Red, White</label>
+                <label>Especificaciones tecnicas del producto Ex: <strong>Tipo:</strong> Color, <strong>Valores:</strong> Negro, Rojo, Blanco</label>
 
                 <?php if ($product->specifications_product != null): ?>
 
@@ -309,7 +309,7 @@ Editar Producto
 
 		                        <div class="input-group-append">
 		                            <span class="input-group-text">
-		                                Type:
+		                                Tipo:
 		                            </span>
 		                        </div>
 
@@ -321,8 +321,8 @@ Editar Producto
 		                        onchange="validateJS(event,'paragraphs')"
 		                        value="<?php echo array_keys($value)[0] ?>" >
 
-		                        <div class="valid-feedback">Valid.</div>
-		                        <div class="invalid-feedback">Please fill out this field.</div>
+		                        <div class="valid-feedback">Valido.</div>
+		                        <div class="invalid-feedback">Por favor rellene este campo.</div>
 
 		                    </div>
 
@@ -343,8 +343,8 @@ Editar Producto
 		                        value="<?php echo implode(",", array_values($value)[0]); ?>">
 		                        
 
-		                        <div class="valid-feedback">Valid.</div>
-		                        <div class="invalid-feedback">Please fill out this field.</div>
+		                        <div class="valid-feedback">Valido.</div>
+		                        <div class="invalid-feedback">Por favor rellene este campo.</div>
 
 		                    </div>
 
@@ -372,7 +372,7 @@ Editar Producto
 
 	                        <div class="input-group-append">
 	                            <span class="input-group-text">
-	                                Type:
+	                                Tipo:
 	                            </span>
 	                        </div>
 
@@ -383,8 +383,8 @@ Editar Producto
 	                        pattern='[-\\(\\)\\=\\%\\&\\$\\;\\_\\*\\"\\#\\?\\¿\\!\\¡\\:\\,\\.\\0-9a-zA-ZñÑáéíóúÁÉÍÓÚ ]{1,}'
 	                        onchange="validateJS(event,'paragraphs')">
 
-	                        <div class="valid-feedback">Valid.</div>
-	                        <div class="invalid-feedback">Please fill out this field.</div>
+	                        <div class="valid-feedback">Valido.</div>
+	                        <div class="invalid-feedback">Por favor rellene este campo.</div>
 
 	                    </div>
 
@@ -403,8 +403,8 @@ Editar Producto
 	                        pattern='[-\\(\\)\\=\\%\\&\\$\\;\\_\\*\\"\\#\\?\\¿\\!\\¡\\:\\,\\.\\0-9a-zA-ZñÑáéíóúÁÉÍÓÚ ]{1,}'
 	                        onchange="validateJS(event,'paragraphs')">
 
-	                        <div class="valid-feedback">Valid.</div>
-	                        <div class="invalid-feedback">Please fill out this field.</div>
+	                        <div class="valid-feedback">Valido.</div>
+	                        <div class="invalid-feedback">Por favor rellene este campo.</div>
 
 	                    </div>
 
@@ -423,7 +423,7 @@ Editar Producto
 
             <div class="form-group">
                 
-                <label>Product Tags<sup class="text-danger">*</sup></label>
+                <label>Palabras claves<sup class="text-danger">*</sup></label>
 
                 <div class="form-group__content">
 
@@ -439,8 +439,8 @@ Editar Producto
                     required
                     >
 
-                    <div class="valid-feedback">Valid.</div>
-                    <div class="invalid-feedback">Please fill out this field.</div>
+                    <div class="valid-feedback">Valido.</div>
+                    <div class="invalid-feedback">Por favor rellene este campo.</div>
 
                 </div>
 
@@ -454,7 +454,7 @@ Editar Producto
 
             	 <input type="hidden" name="imageProductOld" value="<?php echo $product->image_product ?>">
                 
-                <label>Product Image<sup class="text-danger">*</sup></label> 
+                <label>Imagen del producto<sup class="text-danger">*</sup></label> 
 
                 <div class="form-group__content">
                     
@@ -476,10 +476,10 @@ Editar Producto
                         onchange="validateImageJS(event, 'changeImage')"
                         >
 
-                        <div class="valid-feedback">Valid.</div>
-                        <div class="invalid-feedback">Please fill out this field.</div>
+                        <div class="valid-feedback">Valido.</div>
+                        <div class="invalid-feedback">Por favor rellene este campo.</div>
 
-                        <label class="custom-file-label" for="imageProduct">Choose file</label>
+                        <label class="custom-file-label" for="imageProduct">Elige el archivo</label>
 
                     </div>
 
@@ -492,7 +492,7 @@ Editar Producto
             Galería del Producto
             ======================================-->    
 
-            <label>Product Gallery: <sup class="text-danger">*</sup></label> 
+            <label>Galería del Producto: <sup class="text-danger">*</sup></label> 
 
             <div class="dropzone mb-3">
 
@@ -506,7 +506,7 @@ Editar Producto
 
             			</div>
 
-            			<a class="dz-remove" data-dz-remove remove="<?=$value?>" onclick="removeGallery(this)">Remove file</a>
+            			<a class="dz-remove" data-dz-remove remove="<?=$value?>" onclick="removeGallery(this)">Eliminar archivo</a>
 
             		</div>   
             		
@@ -514,7 +514,7 @@ Editar Producto
                 
                 <div class="dz-message">
                     
-                     Drop your images here, size max 500px * 500px
+                    Suelta tus imágenes aquí, tamaño máximo 500px * 500px
 
                 </div>
 
@@ -526,541 +526,6 @@ Editar Producto
 
 			<input type="hidden" name="deleteGalleryProduct">
 
-            <!--=====================================
-            Banner Top del producto
-            ======================================--> 
-
-            <div class="form-group">
-                
-                <label>Product Top Banner<sup class="text-danger">*</sup>, Ex:</label>
-
-                <figure class="pb-5">
-                    
-                    <img src="img/products/default/example-top-banner.png" class="img-fluid">
-
-                </figure>
-
-                <div class="row mb-5">
-                    
-                     <!--=====================================
-                    H3 Tag
-                    ======================================-->
-
-                    <div class="col-12 col-lg-6 form-group__content input-group mx-0 pr-0 mb-3">
-                         
-                        <div class="input-group-append">
-                            <span class="input-group-text">
-                                H3 Tag:
-                            </span>
-                        </div>
-
-                        <input 
-                        type="text"
-                        class="form-control"
-                        placeholder="Ex: 20%"
-                        name="topBannerH3Tag"
-                        pattern="[-\\(\\)\\=\\%\\&\\$\\;\\_\\*\\'\\#\\?\\¿\\!\\¡\\:\\,\\.\\0-9a-zA-ZñÑáéíóúÁÉÍÓÚ ]{1,50}"
-                        maxlength="50"
-                        onchange="validateJS(event,'paragraphs')" 
-                        value="<?php echo json_decode($product->top_banner_product, true)["H3 tag"] ?>"
-                        required
-                        >
-
-                        <div class="valid-feedback">Valid.</div>
-                        <div class="invalid-feedback">Please fill out this field.</div>
-
-                     </div>
-
-                    <!--=====================================
-                    P1 Tag
-                    ======================================-->
-
-                    <div class="col-12 col-lg-6 form-group__content input-group mx-0 mb-3">
-
-                        <div class="input-group-append">
-                            <span class="input-group-text">
-                                P1 Tag:
-                            </span>
-                        </div>
-
-                        <input type="text"
-                        class="form-control"
-                        placeholder="Ex: Disccount"
-                        name="topBannerP1Tag"
-                        pattern="[-\\(\\)\\=\\%\\&\\$\\;\\_\\*\\'\\#\\?\\¿\\!\\¡\\:\\,\\.\\0-9a-zA-ZñÑáéíóúÁÉÍÓÚ ]{1,50}"
-                        maxlength="50"
-                        onchange="validateJS(event,'paragraphs')" 
-                        value="<?php echo json_decode($product->top_banner_product, true)["P1 tag"] ?>" 
-                        required
-                        >
-
-                        <div class="valid-feedback">Valid.</div>
-                        <div class="invalid-feedback">Please fill out this field.</div>
-
-                    </div>
-
-                    <!--=====================================
-                    H4 Tag
-                    ======================================-->
-
-                    <div class="col-12 col-lg-6 form-group__content input-group mx-0 pr-0 mb-3">
-
-                        <div class="input-group-append">
-                            <span class="input-group-text">
-                                H4 Tag:
-                            </span>
-                        </div>
-
-                        <input type="text"
-                        class="form-control"
-                        placeholder="Ex: For Books Of March"
-                        name="topBannerH4Tag"
-                        pattern="[-\\(\\)\\=\\%\\&\\$\\;\\_\\*\\'\\#\\?\\¿\\!\\¡\\:\\,\\.\\0-9a-zA-ZñÑáéíóúÁÉÍÓÚ ]{1,50}"
-                        maxlength="50"
-                        onchange="validateJS(event,'paragraphs')" 
-                        value="<?php echo json_decode($product->top_banner_product, true)["H4 tag"] ?>"
-                        required
-                        >
-
-                        <div class="valid-feedback">Valid.</div>
-                        <div class="invalid-feedback">Please fill out this field.</div>
-
-                    </div>
-
-                     <!--=====================================
-                    P2 Tag
-                    ======================================-->
-
-                    <div class="col-12 col-lg-6 form-group__content input-group mx-0 mb-3">
-
-                        <div class="input-group-append">
-                            <span class="input-group-text">
-                                P2 Tag:
-                            </span>
-                        </div>
-
-                        <input type="text"
-                        class="form-control"
-                        placeholder="Ex: Enter Promotion"
-                        name="topBannerP2Tag"
-                        pattern="[-\\(\\)\\=\\%\\&\\$\\;\\_\\*\\'\\#\\?\\¿\\!\\¡\\:\\,\\.\\0-9a-zA-ZñÑáéíóúÁÉÍÓÚ ]{1,50}"
-                        maxlength="50"
-                        onchange="validateJS(event,'paragraphs')" 
-                        value="<?php echo json_decode($product->top_banner_product, true)["P2 tag"] ?>"
-                        required
-                        >
-
-                        <div class="valid-feedback">Valid.</div>
-                        <div class="invalid-feedback">Please fill out this field.</div>
-
-                    </div>
-
-                    <!--=====================================
-                    Span Tag
-                    ======================================-->
-
-                    <div class="col-12 col-lg-6 form-group__content input-group mx-0 pr-0 mb-3">
-
-                        <div class="input-group-append">
-                            <span class="input-group-text">
-                                Span Tag:
-                            </span>
-                        </div>
-
-                        <input 
-                        type="text"
-                        class="form-control"
-                        placeholder="Ex: Sale2019"
-                        name="topBannerSpanTag"
-                        pattern="[-\\(\\)\\=\\%\\&\\$\\;\\_\\*\\'\\#\\?\\¿\\!\\¡\\:\\,\\.\\0-9a-zA-ZñÑáéíóúÁÉÍÓÚ ]{1,50}"
-                        maxlength="50"
-                        onchange="validateJS(event,'paragraphs')"
-                        value="<?php echo json_decode($product->top_banner_product, true)["Span tag"] ?>" 
-                        required
-                        >
-
-                        <div class="valid-feedback">Valid.</div>
-                        <div class="invalid-feedback">Please fill out this field.</div>
-
-                    </div>
-
-                     <!--=====================================
-                    Button Tag
-                    ======================================-->
-
-                    <div class="col-12 col-lg-6 form-group__content input-group mx-0 mb-3">
-
-                        <div class="input-group-append">
-                            <span class="input-group-text">
-                                Button Tag:
-                            </span>
-                        </div>
-
-                        <input 
-                        type="text"
-                        class="form-control"
-                        placeholder="Ex: Shop now"
-                        name="topBannerButtonTag"
-                        pattern="[-\\(\\)\\=\\%\\&\\$\\;\\_\\*\\'\\#\\?\\¿\\!\\¡\\:\\,\\.\\0-9a-zA-ZñÑáéíóúÁÉÍÓÚ ]{1,50}"
-                        maxlength="50"
-                        onchange="validateJS(event,'paragraphs')" 
-                        value="<?php echo json_decode($product->top_banner_product, true)["Button tag"] ?>"
-                        required
-                        >
-
-                        <div class="valid-feedback">Valid.</div>
-                        <div class="invalid-feedback">Please fill out this field.</div>
-
-                    </div>
-
-                    <!--=====================================
-                    IMG Tag
-                    ======================================-->
-
-                    <div class="col-12">
-
-                    	<input type="hidden" name="topBannerOld" value="<?php echo json_decode($product->top_banner_product, true)["IMG tag"] ?>">
-
-                        <label>IMG Tag:</label>
-
-                        <div class="form-group__content">
-
-                            <label class="pb-5" for="topBanner">
-                                <img src="img/products/<?= $product->url_category ?>/top/<?php echo json_decode($product->top_banner_product, true)["IMG tag"] ?>" class="img-fluid changeTopBanner">
-                            </label> 
-
-                            <div class="custom-file">
-
-                                <input type="file"
-                                class="custom-file-input"
-                                id="topBanner"
-                                name="topBanner"
-                                accept="image/*"
-                                maxSize="2000000"
-                                onchange="validateImageJS(event, 'changeTopBanner')"
-                                >
-
-                                <div class="valid-feedback">Valid.</div>
-                                <div class="invalid-feedback">Please fill out this field.</div>
-
-                                <label class="custom-file-label" for="topBanner">Choose file</label>   
-
-                            </div>       
-
-                        </div>
-
-                    </div>
-
-
-                </div>
-
-            </div>
-
-            <!--=====================================
-            Banner por defecto del producto
-            ======================================--> 
-
-            <div class="form-group">
-
-            	<input type="hidden" name="defaultBannerOld" value="<?= $product->default_banner_product ?>">
-
-                <label>Product Default Banner<sup class="text-danger">*</sup></label>
-
-                <div class="form-group__content">
-
-                    <label class="pb-5" for="defaultBanner">
-                        <img src="img/products/<?= $product->url_category ?>/default/<?= $product->default_banner_product ?>" class="img-fluid changeDefaultBanner" style="width:500px">
-                    </label> 
-
-                    <div class="custom-file">
-
-                        <input type="file"
-                        class="custom-file-input"
-                        id="defaultBanner"
-                        name="defaultBanner"
-                        accept="image/*"
-                        maxSize="2000000"
-                        onchange="validateImageJS(event, 'changeDefaultBanner')"
-                        >
-
-                        <div class="valid-feedback">Valid.</div>
-                        <div class="invalid-feedback">Please fill out this field.</div>
-
-                        <label class="custom-file-label" for="defaultBanner">Choose file</label>   
-
-                    </div>         
-                    
-                </div>
-
-            </div>
-
-             <!--=====================================
-            Slide Horizontal del producto
-            ======================================--> 
-
-            <div class="form-group">
-                
-                <label>Product Horizontal Slider<sup class="text-danger">*</sup>, Ex:</label>
-
-                <figure class="pb-5">
-                    
-                    <img src="img/products/default/example-horizontal-slider.png" class="img-fluid">
-
-                </figure>
-
-                <div class="row mb-3">
-                    
-                    <!--=====================================
-                    H4 Tag
-                    ======================================-->
-
-                    <div class="col-12 col-lg-6 form-group__content input-group mx-0 pr-0 mb-3">
-
-                        <div class="input-group-append">
-                            <span class="input-group-text">
-                                H4 Tag:
-                            </span>
-                        </div>
-
-                        <input type="text"
-                        class="form-control"
-                        placeholder="Ex: Limit Edition"
-                        name="hSliderH4Tag"       
-                        pattern="[-\\(\\)\\=\\%\\&\\$\\;\\_\\*\\'\\#\\?\\¿\\!\\¡\\:\\,\\.\\0-9a-zA-ZñÑáéíóúÁÉÍÓÚ ]{1,50}"
-                        maxlength="50"
-                        onchange="validateJS(event,'paragraphs')" 
-                         value="<?php echo json_decode($product->horizontal_slider_product, true)["H4 tag"] ?>"
-                        required
-                        >
-
-                        <div class="valid-feedback">Valid.</div>
-                        <div class="invalid-feedback">Please fill out this field.</div>
-
-                    </div>
-
-                    <!--=====================================
-                    H3-1 Tag
-                    ======================================-->
-
-                    <div class="col-12 col-lg-6 form-group__content input-group mx-0 mb-3">
-
-                        <div class="input-group-append">
-                            <span class="input-group-text">
-                                H3-1 Tag:
-                            </span>
-                        </div>
-
-                        <input type="text"
-                        class="form-control"
-                        placeholder="Ex: Happy Summer"
-                        name="hSliderH3_1Tag"
-                        pattern="[-\\(\\)\\=\\%\\&\\$\\;\\_\\*\\'\\#\\?\\¿\\!\\¡\\:\\,\\.\\0-9a-zA-ZñÑáéíóúÁÉÍÓÚ ]{1,50}"
-                        maxlength="50"
-                        onchange="validateJS(event,'paragraphs')" 
-                        value="<?php echo json_decode($product->horizontal_slider_product, true)["H3-1 tag"] ?>"
-                        required
-                        >
-
-                        <div class="valid-feedback">Valid.</div>
-                        <div class="invalid-feedback">Please fill out this field.</div>
-
-                    </div>
-
-                    <!--=====================================
-                    H3-2 Tag
-                    ======================================-->
-
-                    <div class="col-12 col-lg-6 form-group__content input-group mx-0 pr-0 mb-3">
-
-                        <div class="input-group-append">
-                            <span class="input-group-text">
-                                H3-2 Tag:
-                            </span>
-                        </div>
-
-                        <input type="text"
-                        class="form-control"
-                        placeholder="Ex: Combo Super Cool"
-                        name="hSliderH3_2Tag"
-                        pattern="[-\\(\\)\\=\\%\\&\\$\\;\\_\\*\\'\\#\\?\\¿\\!\\¡\\:\\,\\.\\0-9a-zA-ZñÑáéíóúÁÉÍÓÚ ]{1,50}"
-                        maxlength="50"
-                        onchange="validateJS(event,'paragraphs')" 
-                         value="<?php echo json_decode($product->horizontal_slider_product, true)["H3-2 tag"] ?>"
-                        required
-                        >
-
-                        <div class="valid-feedback">Valid.</div>
-                        <div class="invalid-feedback">Please fill out this field.</div>
-
-                    </div>
-
-                    <!--=====================================
-                    H3-3 Tag
-                    ======================================-->
-
-                    <div class="col-12 col-lg-6 form-group__content input-group mx-0 mb-3">
-
-                        <div class="input-group-append">
-                            <span class="input-group-text">
-                                H3-3 Tag:
-                            </span>
-                        </div>
-
-                        <input type="text"
-                        class="form-control"
-                        placeholder="Ex: Up to"
-                        name="hSliderH3_3Tag"
-                        pattern="[-\\(\\)\\=\\%\\&\\$\\;\\_\\*\\'\\#\\?\\¿\\!\\¡\\:\\,\\.\\0-9a-zA-ZñÑáéíóúÁÉÍÓÚ ]{1,50}"
-                        maxlength="50"
-                        onchange="validateJS(event,'paragraphs')"
-                        value="<?php echo json_decode($product->horizontal_slider_product, true)["H3-3 tag"] ?>" 
-                        required
-                        >
-
-                        <div class="valid-feedback">Valid.</div>
-                        <div class="invalid-feedback">Please fill out this field.</div>
-
-                    </div>
-
-                    <!--=====================================
-                    H3-4s Tag
-                    ======================================-->
-
-                    <div class="col-12 col-lg-6 form-group__content input-group mx-0 pr-0 mb-3">
-
-                        <div class="input-group-append">
-                            <span class="input-group-text">
-                                H3-4s Tag:
-                            </span>
-                        </div>
-
-                        <input type="text"
-                        class="form-control"
-                        placeholder="Ex: 40%"
-                        name="hSliderH3_4sTag"
-                        pattern="[-\\(\\)\\=\\%\\&\\$\\;\\_\\*\\'\\#\\?\\¿\\!\\¡\\:\\,\\.\\0-9a-zA-ZñÑáéíóúÁÉÍÓÚ ]{1,50}"
-                        maxlength="50"
-                        onchange="validateJS(event,'paragraphs')" 
-                         value="<?php echo json_decode($product->horizontal_slider_product, true)["H3-4s tag"] ?>"
-                        required
-                        >
-
-                        <div class="valid-feedback">Valid.</div>
-                        <div class="invalid-feedback">Please fill out this field.</div>
-
-                    </div>
-
-
-                    <!--=====================================
-                    Button Tag
-                    ======================================-->
-
-                    <div class="col-12 col-lg-6 form-group__content input-group mx-0 mb-3">
-
-                        <div class="input-group-append">
-                            <span class="input-group-text">
-                                Button Tag:
-                            </span>
-                        </div>
-
-                        <input type="text"
-                        class="form-control"
-                        placeholder="Ex: Shop now"
-                        name="hSliderButtonTag"
-                        pattern="[-\\(\\)\\=\\%\\&\\$\\;\\_\\*\\'\\#\\?\\¿\\!\\¡\\:\\,\\.\\0-9a-zA-ZñÑáéíóúÁÉÍÓÚ ]{1,50}"
-                        maxlength="50"
-                        onchange="validateJS(event,'paragraphs')" 
-                        value="<?php echo json_decode($product->horizontal_slider_product, true)["Button tag"] ?>" 
-                        required
-                        >
-
-                        <div class="valid-feedback">Valid.</div>
-                        <div class="invalid-feedback">Please fill out this field.</div>
-
-                    </div>
-
-                    <!--=====================================
-                    IMG Tag
-                    ======================================-->
-
-                    <div class="col-12">
-
-                    	<input type="hidden" name="hSliderOld" value="<?php echo json_decode($product->horizontal_slider_product, true)["IMG tag"] ?>">
-
-                        <label>IMG Tag:</label>
-
-                        <div class="form-group__content">
-
-                            <label class="pb-5" for="hSlider">
-                               <img src="img/products/<?= $product->url_category ?>/horizontal/<?php echo json_decode($product->horizontal_slider_product, true)["IMG tag"] ?>" class="img-fluid changeHSlider">
-                            </label> 
-
-                            <div class="custom-file">
-
-                                <input type="file"
-                                class="custom-file-input"
-                                id="hSlider"
-                                name="hSlider"
-                                accept="image/*"
-                                maxSize="2000000"
-                                onchange="validateImageJS(event, 'changeHSlider')"
-                                >
-
-                                <div class="valid-feedback">Valid.</div>
-                                <div class="invalid-feedback">Please fill out this field.</div>
-
-                                <label class="custom-file-label" for="hSlider">Choose file</label>   
-
-                            </div>         
-     
-                            
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div> 
-
-            <!--=====================================
-            Slide Vertical del producto
-            ======================================--> 
-
-            <div class="form-group">
-
-            	<input type="hidden" name="vSliderOld" value="<?= $product->vertical_slider_product ?>">
-
-                <label>Product Vertical Slider<sup class="text-danger">*</sup></label>
-
-                <div class="form-group__content">
-
-                    <label class="pb-5" for="vSlider">
-
-                         <img src="img/products/<?= $product->url_category ?>/vertical/<?= $product->vertical_slider_product ?>" class="img-fluid changeVSlider" style="width:260px">
-
-                    </label>
-
-                    <div class="custom-file">
-
-                        <input type="file" 
-                        class="custom-file-input" 
-                        id="vSlider"
-                        name="vSlider"
-                        accept="image/*"
-                        maxSize="2000000"
-                        onchange="validateImageJS(event, 'changeVSlider')"
-                        >
-
-                        <div class="valid-feedback">Valid.</div>
-                        <div class="invalid-feedback">Please fill out this field.</div>
-
-                        <label class="custom-file-label" for="vSlider">Choose file</label>
-
-                    </div>     
-                    
-                </div>
-
-            </div> 
 
             <!--=====================================
             Video del producto
@@ -1068,7 +533,7 @@ Editar Producto
 
             <div class="form-group">
                  
-                <label>Product Video, Ex: <strong>Type:</strong> YouTube, <strong>Id:</strong> Sl5FaskVpD4</label> 
+                <label>Video del producto, Ex: <strong>Tipo:</strong> YouTube, <strong>Id:</strong> Sl5FaskVpD4</label> 
 
                 <div class="row mb-3">
                     
@@ -1076,7 +541,7 @@ Editar Producto
                       
                         <div class="input-group-append">
                             <span class="input-group-text">
-                                Type:
+                                Tipo:
                             </span>
                         </div>
 
@@ -1101,7 +566,7 @@ Editar Producto
 
                          <?php else: ?>
 
-                            <option value="">Select Platform</option>
+                            <option value="">Seleccione la plataforma</option>
                             <option value="youtube">YouTube</option>
                             <option value="vimeo">Vimeo</option>
 
@@ -1130,8 +595,8 @@ Editar Producto
                         <?php endif ?>
                         >
 
-                        <div class="valid-feedback">Valid.</div>
-                        <div class="invalid-feedback">Please fill out this field.</div>         
+                        <div class="valid-feedback">Valido.</div>
+                        <div class="invalid-feedback">Por favor rellene este campo.</div>         
 
                     </div>
 
@@ -1153,7 +618,7 @@ Editar Producto
                     
                     <div class="col-12 col-lg-3">
                         
-                        <label>Product Price<sup class="text-danger">*</sup></label>
+                        <label>Precio de venta<sup class="text-danger">*</sup></label>
 
                         <div class="form-group__content input-group mx-0 pr-0">         
 
@@ -1173,77 +638,12 @@ Editar Producto
                              value="<?= $product->price_product ?>"
                             required>
                         
-                            <div class="valid-feedback">Valid.</div>
-                            <div class="invalid-feedback">Please fill out this field.</div>
+                            <div class="valid-feedback">Valido.</div>
+                            <div class="invalid-feedback">Por favor rellene este campo.</div>
 
                         </div>      
 
                     </div>
-
-                    <!--=====================================
-                    Precio de envío
-                    ======================================-->
-
-                    <div class="col-12 col-lg-3">
-                        
-                        <label>Product Shipping<sup class="text-danger">*</sup></label>
-
-                        <div class="form-group__content input-group mx-0 pr-0"> 
-
-                            <div class="input-group-append">
-                                <span class="input-group-text">
-                                    Shipping $:
-                                </span>
-                            </div>
-
-                            <input type="number"
-                            class="form-control"
-                            name="shipping"
-                            min="0"
-                            step="any"
-                            pattern="[.\\,\\0-9]{1,}"
-                            onchange="validateJS(event, 'numbers')"
-                            value="<?= $product->shipping_product ?>"
-                            required>
-                        
-                            <div class="valid-feedback">Valid.</div>
-                            <div class="invalid-feedback">Please fill out this field.</div> 
-
-                        </div>     
-
-                    </div>
-
-                    <!--=====================================
-                    Días de entrega
-                    ======================================-->
-
-                    <div class="col-12 col-lg-3">
-                        
-                        <label>Product Delivery Time<sup class="text-danger">*</sup></label>
-
-                        <div class="form-group__content input-group mx-0 pr-0"> 
-
-                            <div class="input-group-append">
-                                <span class="input-group-text">
-                                    Days:
-                                </span>
-                            </div>
-
-                            <input type="number"
-                            class="form-control"
-                            name="delivery_time"
-                            min="0"
-                            pattern="[.\\,\\0-9]{1,}"
-                            onchange="validateJS(event, 'numbers')"
-                            value="<?= $product->delivery_time_product ?>"
-                            required>
-                        
-                            <div class="valid-feedback">Valid.</div>
-                            <div class="invalid-feedback">Please fill out this field.</div>  
-
-                        </div>    
-
-                    </div> 
 
                      <!--=====================================
                     Stock
@@ -1251,13 +651,13 @@ Editar Producto
 
                     <div class="col-12 col-lg-3">
                         
-                        <label>Product Stock<sup class="text-danger">*</sup> (Max:100 unit)</label>
+                        <label>Productos en existencia<sup class="text-danger">*</sup> (Max:100 unidades)</label>
 
                         <div class="form-group__content input-group mx-0 pr-0"> 
 
                             <div class="input-group-append">
                                 <span class="input-group-text">
-                                    Stock:
+                                    En existencia:
                                 </span>
                             </div>
 
@@ -1271,8 +671,8 @@ Editar Producto
                             value="<?= $product->stock_product ?>"
                             required>
                         
-                            <div class="valid-feedback">Valid.</div>
-                            <div class="invalid-feedback">Please fill out this field.</div>  
+                            <div class="valid-feedback">Valido.</div>
+                            <div class="invalid-feedback">Por favor rellene este campo.</div>  
 
                         </div>    
 
@@ -1288,7 +688,7 @@ Editar Producto
 
             <div class="form-group">
                 
-                <label>Product Offer Ex: <strong>Type:</strong> Disccount, <strong>Percent %:</strong> 25, <strong>End offer:</strong> 30/06/2020</label>
+                <label>Oferta del producto Ex: <strong>Tipo:</strong> Descuento, <strong>Porcentaje %:</strong> 25, <strong>Fin de la oferta:</strong> 30/06/2022</label>
 
                 <div class="row mb-3">
 
@@ -1300,7 +700,7 @@ Editar Producto
                         
                         <div class="input-group-append">
                             <span class="input-group-text">
-                                Type:
+                                Tipo de Oferta:
                             </span>
                         </div>
 
@@ -1313,27 +713,27 @@ Editar Producto
 
                              	<?php if (json_decode($product->offer_product, true)[0] == "Discount"): ?>
 
-                             		<option value="Discount">Disccount</option>
-                                	<option value="Fixed">Fixed</option>
+                             		<option value="Discount">Descuento</option>
+                                	<option value="Fixed">Fijo</option>
 
                             <?php else: ?>
             
-                                <option value="Fixed">Fixed</option>
-                                <option value="Discount">Disccount</option>
+                                <option value="Fixed">Fijo</option>
+                                <option value="Discount">Descuento</option>
                                     
                             <?php endif ?>
 
                             <?php else: ?>
 
-	                            <option value="Discount">Disccount</option>
-	                            <option value="Fixed">Fixed</option>
+	                            <option value="Discount">Descuento</option>
+	                            <option value="Fixed">Fijo</option>
 	                            
 	                        <?php endif ?>
 
                         </select>
 
-                        <div class="valid-feedback">Valid.</div>
-                        <div class="invalid-feedback">Please fill out this field.</div>        
+                        <div class="valid-feedback">Valido.</div>
+                        <div class="invalid-feedback">Por favor rellene este campo.</div>        
 
                     </div>
 
@@ -1351,14 +751,14 @@ Editar Producto
 
         		   	 			 	<span 
                             		class="input-group-text typeOffer">
-	                                	Percent %:
+	                                	Porcentaje %:
 	                            	</span>
 
 	                             <?php else: ?>
             
                                     <span 
                                     class="input-group-text typeOffer">
-                                        Price $:
+                                        Precio $:
                                     </span>
                                         
                                 <?php endif ?>
@@ -1381,7 +781,7 @@ Editar Producto
 	                           
 	                            <span 
 	                            class="input-group-text typeOffer">
-	                                Percent %:
+	                                Porcentaje %:
 	                            </span>
 
 	                        </div>
@@ -1396,8 +796,8 @@ Editar Producto
 
 	                     <?php endif ?>
 
-                        <div class="valid-feedback">Valid.</div>
-                        <div class="invalid-feedback">Please fill out this field.</div>     
+                        <div class="valid-feedback">Valido.</div>
+                        <div class="invalid-feedback">Por favor rellene este campo.</div>     
 
                     </div>
 
@@ -1409,7 +809,7 @@ Editar Producto
                         
                         <div class="input-group-append">
                             <span class="input-group-text">
-                                End Offer:
+                                Fin de la oferta:
                             </span>
                         </div>
 
@@ -1428,8 +828,8 @@ Editar Producto
                             
                         <?php endif ?>
 
-                        <div class="valid-feedback">Valid.</div>
-                        <div class="invalid-feedback">Please fill out this field.</div>     
+                        <div class="valid-feedback">Valido.</div>
+                        <div class="invalid-feedback">Por favor rellene este campo.</div>     
 
                     </div>
                       
@@ -1447,7 +847,7 @@ Editar Producto
                  
                 <button
                 type="submit"
-                class="ps-btn ps-btn--fullwidth">Save Product</button>
+                class="ps-btn ps-btn--fullwidth">Guardar producto</button>
 
                 <?php 
 

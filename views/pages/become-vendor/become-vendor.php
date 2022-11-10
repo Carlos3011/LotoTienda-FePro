@@ -8,9 +8,9 @@ Breadcrumb
 
         <ul class="breadcrumb">
 
-            <li><a href="/">Home</a></li>
+            <li><a href="/">Inicio</a></li>
 
-            <li>Become a Vendor</li>
+            <li>Convertirse en Vendedor</li>
 
         </ul>
 
@@ -30,7 +30,7 @@ Become a Vendor Content
 
     <div class="ps-vendor-banner bg--cover" style="background: url(img/vendor/vendor.jpg);">
         <div class="container">
-            <h2>Millions Of Shoppers Can’t Wait To See What You Have In Store</h2><a class="ps-btn ps-btn--lg" href="/account&login">Start Selling</a>
+            <h2>Miles de alumnos de nuestra comunidad universitaria necesitan de una herramienta como esta para dar a conocer su marca y productos.</h2><a class="ps-btn ps-btn--lg" href="/account&login">Comienza a Vender</a>
         </div>
     </div>
 
@@ -41,8 +41,8 @@ Become a Vendor Content
     <div class="ps-section--vendor ps-vendor-about">
         <div class="container">
             <div class="ps-section__header">
-                <p>WHY SELL ON MARTFURY</p>
-                <h4>Join a marketplace where nearly 50 million buyers around <br> the world shop for unique items</h4>
+                <p>POR QUE VENDER Y HACER TRUEQUES EN NUESTRA LOBOTIENDA</p>
+                <h4>Es una excelente herramienta de apoyo para los alumnos que necesiten un ingreso extra<br> o que deseen deshacerse de algunas cosas que ya no son de utilidad.</h4>
             </div>
             <div class="ps-section__content">
                 <div class="row">

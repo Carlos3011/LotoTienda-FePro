@@ -139,10 +139,10 @@ My Account Content
             <div class="ps-section__content">
 
                   <ul class="ps-section__links">
-                    <li><a href="<?php echo $path ?>account&wishlist">My Wishlist</a></li>
-                    <li><a href="<?php echo $path ?>account&my-shopping">My Shopping</a></li>
-                    <li><a href="<?php echo $path ?>account&my-store">My Store</a></li>
-                    <li class="active"><a href="<?php echo $path ?>account&my-sales">My Sales</a></li>
+                    <li><a href="<?php echo $path ?>account&wishlist">Lista de Deseos</a></li>
+                    <li><a href="<?php echo $path ?>account&my-shopping">Mis Compras</a></li>
+                    <li><a href="<?php echo $path ?>account&my-store">Mi Tienda</a></li>
+                    <li class="active"><a href="<?php echo $path ?>account&my-sales">Mis Ventas/Trueques</a></li>
                 </ul>
 
                 <!--=====================================
@@ -159,7 +159,7 @@ My Account Content
 
                                 <div class="input-group-prepend">
 
-                                    <span class="input-group-text" id="time-from">From</span>
+                                    <span class="input-group-text" id="time-from">De</span>
 
                                 </div>
 
@@ -187,7 +187,7 @@ My Account Content
 
                         <div class="col-lg-3 col-md-4 col-sm-6 col-12 ">
 
-                            <button type="submit" class="ps-btn"><i class="icon-sync2"></i> Update</button>
+                            <button type="submit" class="ps-btn"><i class="icon-sync2"></i> Actualizar</button>
 
                         </div>
 
@@ -246,19 +246,19 @@ My Account Content
 
                         <figure class="ps-block--vendor-status">
 
-                            <figcaption>Commissions Sales</figcaption>
+                            <figcaption>Comision de Ventas</figcaption>
 
                             <table class="table ps-table ps-table--vendor-status">
 
                                 <tbody>
 
                                     <tr>
-                                        <td>Store Profits</td>
+                                        <td>Ganancias</td>
                                         <td>$<?php echo number_format($profits,2) ?></td>
                                     </tr>
 
                                     <tr>
-                                        <td>Commissions</td>
+                                        <td>Comisiones</td>
                                         <td>$<?php echo number_format($commissions,2) ?></td>
                                     </tr>
 
@@ -285,7 +285,7 @@ My Account Content
 
                     <figure class="ps-block--vendor-status">
 
-                        <figcaption>Sales Graph</figcaption>
+                        <figcaption>Grafico de Ventas</figcaption>
 
                         <canvas id="line-chart" width="585" height="292" class="chartjs-render-monitor" style="display: block; width: 585px; height: 292px;"></canvas>
 
@@ -301,7 +301,7 @@ My Account Content
                     
                     <figure class="ps-block--vendor-status">
 
-                        <figcaption>Sales Table</figcaption>
+                        <figcaption>Tabla de Ventas</figcaption>
 
                     </figure>
 
@@ -311,11 +311,11 @@ My Account Content
 
                             <thead>
                                 <tr>
-                                    <th>date</th>
-                                    <th>Product</th>
-                                    <th>Quantity</th>
-                                    <th>Price</th>
-                                    <th>Comission</th>
+                                    <th>Fecha</th>
+                                    <th>Producto</th>
+                                    <th>Cantidad</th>
+                                    <th>Precio</th>
+                                    <th>Comision</th>
                                     <th>Total</th>
                                 </tr>
                             </thead>

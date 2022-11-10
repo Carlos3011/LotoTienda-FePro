@@ -61,11 +61,11 @@
             <ul class="ps-tab-list">
 
                 <li class="active">
-                    <p><a href="<?php echo $path ?>account&login">Login</a></p>
+                    <p><a href="<?php echo $path ?>account&login">Ingresar</a></p>
                 </li>
 
                 <li class="">
-                    <p><a href="<?php echo $path ?>account&enrollment">Register</a></p>
+                    <p><a href="<?php echo $path ?>account&enrollment">Registrarse</a></p>
                 </li>
 
             </ul>
@@ -80,7 +80,7 @@
 
                     <div class="ps-form__content">
 
-                        <h5>Log In Your Account</h5>
+                        <h5>Ingresar a tu cuenta</h5>
 
                         <div class="form-group">
 
@@ -93,8 +93,8 @@
                             name="loginEmail"
                             required>
 
-                            <div class="valid-feedback">Valid.</div>
-                            <div class="invalid-feedback">Please fill in this field correctly.</div>
+                            <div class="valid-feedback">Valido.</div>
+                                <div class="invalid-feedback">Por favor complete  el formulario correctamente.</div>
 
                         </div>
 
@@ -109,10 +109,10 @@
                             name="loginPassword"
                             required>
 
-                            <div class="valid-feedback">Valid.</div>
-                            <div class="invalid-feedback">Please fill in this field correctly.</div>
+                            <div class="valid-feedback">Valido.</div>
+                                <div class="invalid-feedback">Por favor complete  el formulario correctamente.</div>
 
-                            <a href="#resetPassword" data-toggle="modal">Forgot?</a>
+                            <a href="#resetPassword" data-toggle="modal">Olvidor su contraseña?</a>
 
                         </div>
 
@@ -122,7 +122,7 @@
 
                                 <input class="form-control" type="checkbox" id="remember-me" name="remember-me" onchange="remember(event)">
 
-                                <label for="remember-me">Remember me</label>
+                                <label for="remember-me">Recuerdarme</label>
 
                             </div>
 
@@ -137,7 +137,7 @@
 
                         <div class="form-group submtit">
 
-                            <button type="submit" class="ps-btn ps-btn--fullwidth">Login</button>
+                            <button type="submit" class="ps-btn ps-btn--fullwidth">Ingresar</button>
 
                         </div>
 
@@ -145,7 +145,7 @@
 
                     <div class="ps-form__footer">
 
-                        <p>Connect with:</p>
+                        <p>Conectar con:</p>
 
                         <ul class="ps-list--social">
 

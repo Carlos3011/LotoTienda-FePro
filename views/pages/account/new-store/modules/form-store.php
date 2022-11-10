@@ -17,23 +17,23 @@ Crear tienda
         ======================================-->
 
         <div class="form-group">
-        	
-        	<label>Store Name<sup class="text-danger">*</sup></label>
+                        
+            <label>Nombre de la tienda<sup class="text-danger">*</sup></label>
 
-        	<div class="form-group__content">
-        		
-        		<input 
-        		type="text"
-        		class="form-control formStore"
-        		name="nameStore"
-        		pattern="[0-9A-Za-zñÑáéíóúÁÉÍÓÚ ]{1,}"
-        		onchange="validateDataRepeat(event, 'store')"
-        		required>
+            <div class="form-group__content">
+                
+                <input 
+                type="text"
+                class="form-control"
+                name="nameStore"
+                value="<?= $store[0]->name_store ?>"
+                readonly
+                required>
 
-        		<div class="valid-feedback">Valid.</div>
-        		<div class="invalid-feedback">Please fill out this field.</div>
+                <div class="valid-feedback">Valido.</div>
+                <div class="invalid-feedback">Por favor rellene este campo.</div>
 
-        	</div>
+            </div>
 
         </div>
 
@@ -43,19 +43,20 @@ Crear tienda
 
         <div class="form-group">
         
-            <label>Store Url<sup class="text-danger">*</sup></label>
+            <label>Url de la tienda<sup class="text-danger">*</sup></label>
 
             <div class="form-group__content">
-            	
-            	<input 
-            	type="text"
-                class="form-control formStore"
+                
+                <input 
+                type="text"
+                class="form-control"
                 name="urlStore"
+                value="<?= $store[0]->url_store ?>"
                 readonly
                 required>
 
-                <div class="valid-feedback">Valid.</div>
-                <div class="invalid-feedback">Please fill out this field.</div>
+                <div class="valid-feedback">Valido.</div>
+                <div class="invalid-feedback">Por favor rellene este campo.</div>
 
             </div>
 
@@ -67,21 +68,21 @@ Crear tienda
 
         <div class="form-group">
         
-            <label>Store About<sup class="text-danger">*</sup></label>
+            <label>Información de la tienda<sup class="text-danger">*</sup></label>
 
             <div class="form-group__content">
                 
                 <textarea
-                class="form-control formStore"
+                class="form-control"
                 rows="7"
                 placeholder="Notes about your store in maximum 1000 characters, ex: We are a store specialized in technology..."
                 name="aboutStore"
                 pattern="[-\\(\\)\\=\\%\\&\\$\\;\\_\\*\\'\\#\\?\\¿\\!\\¡\\:\\,\\.\\0-9a-zA-ZñÑáéíóúÁÉÍÓÚ ]{1,1000}"
                 onchange="validateJS(event,'paragraphs')"
-                required></textarea>
+                required><?= $store[0]->about_store ?></textarea>
 
-                <div class="valid-feedback">Valid.</div>
-                <div class="invalid-feedback">Please fill out this field.</div>
+                <div class="valid-feedback">Valido.</div>
+                <div class="invalid-feedback">Por favor rellene este campo.</div>
 
             </div>
 
@@ -93,7 +94,7 @@ Crear tienda
 
         <div class="form-group">
         
-            <label>Store Email<sup class="text-danger">*</sup></label>
+            <label>Email de la tienda<sup class="text-danger">*</sup></label>
 
             <div class="form-group__content">
                 
@@ -105,8 +106,8 @@ Crear tienda
                 readonly
                 required>
 
-                <div class="valid-feedback">Valid.</div>
-                <div class="invalid-feedback">Please fill out this field.</div>
+                <div class="valid-feedback">Valido.</div>
+                <div class="invalid-feedback">Por favor rellene este campo.</div>
 
             </div>
 
@@ -118,7 +119,7 @@ Crear tienda
 
         <div class="form-group">
 
-            <label>Store Campus<sup class="text-danger">*</sup></label>
+            <label>Campus de la tienda<sup class="text-danger">*</sup></label>
 
             <?php
 
@@ -142,7 +143,7 @@ Crear tienda
 
                 <?php else: ?>
 
-                	<option value>Select Campus</option>
+                	<option value>Seleccione Campus</option>
 
                 <?php endif ?>
 
@@ -154,8 +155,8 @@ Crear tienda
 
                 </select>
 
-                <div class="valid-feedback">Valid.</div>
-                <div class="invalid-feedback">Please fill in this field correctly.</div>
+                <div class="valid-feedback">Valido.</div>
+                <div class="invalid-feedback">Por favor rellene este campo.</div>
 
             </div>
 
@@ -167,7 +168,7 @@ Crear tienda
 
         <div class="form-group">
 
-            <label>Store of the faculty<sup>*</sup></label>
+            <label>Facultad de la tienda<sup>*</sup></label>
 
             <div class="form-group__content">
 
@@ -180,8 +181,8 @@ Crear tienda
                 value="<?php echo $_SESSION["user"]->city_user ?>" 
                 required>
 
-                <div class="valid-feedback">Valid.</div>
-                <div class="invalid-feedback">Please fill in this field correctly.</div>
+                <div class="valid-feedback">Valido.</div>
+                <div class="invalid-feedback">Por favor rellene este campo.</div>
 
             </div>
 
@@ -193,7 +194,7 @@ Crear tienda
 
         <div class="form-group">
 
-            <label>Store Phone<sup>*</sup></label>
+            <label>Telefono de la tienda<sup>*</sup></label>
 
             <div class="form-group__content input-group">
 
@@ -234,8 +235,8 @@ Crear tienda
                 value="<?php echo $phone ?>" 
                 required>
 
-                <div class="valid-feedback">Valid.</div>
-                <div class="invalid-feedback">Please fill in this field correctly.</div>
+                <div class="valid-feedback">Valido.</div>
+                <div class="invalid-feedback">Por favor rellene este campo.</div>
 
             </div>
 
@@ -247,7 +248,7 @@ Crear tienda
 
         <div class="form-group">
 
-            <label>Store Delivery Locations<sup>*</sup></label>
+            <label>Puntos de entrega de la tienda<sup>*</sup></label>
 
             <div class="form-group__content">
 
@@ -260,8 +261,8 @@ Crear tienda
                 value="<?php echo $_SESSION["user"]->address_user ?>" 
                 required>
 
-                <div class="valid-feedback">Valid.</div>
-                <div class="invalid-feedback">Please fill in this field correctly.</div>
+                <div class="valid-feedback">Valido.</div>
+                <div class="invalid-feedback">Por favor rellene este campo.</div>
 
             </div>
 
@@ -273,7 +274,7 @@ Crear tienda
 
         <div class="form-group">
         	
-        	<label>Store Logo<sup class="text-danger">*</sup></label> 
+        	<label>Logo de la tienda<sup class="text-danger">*</sup></label> 
 
         	<div class="form-group__content">
         		
@@ -295,10 +296,10 @@ Crear tienda
         			onchange="validateImageJS(event, 'changeLogo')"
         			required>
 
-        			<div class="valid-feedback">Valid.</div>
-                    <div class="invalid-feedback">Please fill out this field.</div>
+        			<div class="valid-feedback">Valido.</div>
+                    <div class="invalid-feedback">Por favor rellene este campo.</div>
 
-                    <label class="custom-file-label" for="logoStore">Choose file</label>
+                    <label class="custom-file-label" for="logoStore">Seleccione el archivo</label>
 
         		</div>
 
@@ -313,7 +314,7 @@ Crear tienda
 
         <div class="form-group">
         	
-        	<label>Store Cover<sup class="text-danger">*</sup></label> 
+        	<label>Portada de la tienda<sup class="text-danger">*</sup></label> 
 
         	<div class="form-group__content">
         		
@@ -335,10 +336,10 @@ Crear tienda
         			onchange="validateImageJS(event, 'changeCover')"
         			required>
 
-        			<div class="valid-feedback">Valid.</div>
-                    <div class="invalid-feedback">Please fill out this field.</div>
+        			<div class="valid-feedback">Valido.</div>
+                    <div class="invalid-feedback">Por favor rellene este campo.</div>
 
-                    <label class="custom-file-label" for="coverStore">Choose file</label>
+                    <label class="custom-file-label" for="coverStore">Selecciones el archivo</label>
 
         		</div>
 
@@ -353,7 +354,7 @@ Crear tienda
 
         <div class="form-group">
             
-            <label>Social Networks</label>
+            <label>Redes Sociales</label>
 
             <!--=====================================
             Facebook
@@ -372,8 +373,8 @@ Crear tienda
                 onchange="validateJS(event, 'paragraphs')" 
                 >
 
-                <div class="valid-feedback">Valid.</div>
-                <div class="invalid-feedback">Please fill out this field.</div>
+                <div class="valid-feedback">Valido.</div>
+                <div class="invalid-feedback">Por favor rellene este campo.</div>
 
             </div>
 
@@ -394,8 +395,8 @@ Crear tienda
                 onchange="validateJS(event, 'paragraphs')" 
                 >
 
-                <div class="valid-feedback">Valid.</div>
-                <div class="invalid-feedback">Please fill out this field.</div>
+                <div class="valid-feedback">Valido.</div>
+                <div class="invalid-feedback">Por favor rellene este campo.</div>
 
             </div>
 
@@ -416,8 +417,8 @@ Crear tienda
                 onchange="validateJS(event, 'paragraphs')" 
                 >
 
-                <div class="valid-feedback">Valid.</div>
-                <div class="invalid-feedback">Please fill out this field.</div>
+                <div class="valid-feedback">Valido.</div>
+                <div class="invalid-feedback">Por favor rellene este campo.</div>
 
             </div>
 
@@ -438,8 +439,8 @@ Crear tienda
                 onchange="validateJS(event, 'paragraphs')" 
                 >
 
-                <div class="valid-feedback">Valid.</div>
-                <div class="invalid-feedback">Please fill out this field.</div>
+                <div class="valid-feedback">Valido.</div>
+                <div class="invalid-feedback">Por favor rellene este campo.</div>
 
             </div>
 
@@ -460,8 +461,8 @@ Crear tienda
                 onchange="validateJS(event, 'paragraphs')" 
                 >
 
-                <div class="valid-feedback">Valid.</div>
-                <div class="invalid-feedback">Please fill out this field.</div>
+                <div class="valid-feedback">Valido.</div>
+                <div class="invalid-feedback">Por favor rellene este campo.</div>
 
             </div>
 

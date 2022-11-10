@@ -4,7 +4,7 @@
 
 	    <ul class="breadcrumb">
 
-	        <li><a href="/">Home</a></li>
+	        <li><a href="/">Inicio</a></li>
 
 	        <li><a href="<?php echo $path.$item->url_category ?>"><?php echo $item->name_category ?></a></li>
 

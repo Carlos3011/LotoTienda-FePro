@@ -29,13 +29,13 @@ $storeProduct =  CurlController::request($url, $method, $fields, $header)->resul
 
     <aside class="widget widget_sell-on-site">
 
-        <p><i class="icon-store"></i> Sell on MarketPlace?<a href="#"> Register Now !</a></p>
+        <p><i class="icon-store"></i> Quieres vende en nuestra LOBOTIENDA?<a href="#"> Registrate ahora !</a></p>
 
     </aside>
 
     <aside class="widget widget_same-brand">
 
-        <h3>Same Store</h3>
+        <h3>Misma Tienda</h3>
 
         <div class="widget__content">
 

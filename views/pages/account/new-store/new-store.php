@@ -25,10 +25,10 @@ My Account Content
             <div class="ps-section__content">
 
                 <ul class="ps-section__links">
-                    <li><a href="<?php echo $path ?>account&wishlist">My Wishlist</a></li>
-                    <li><a href="<?php echo $path ?>account&my-shopping">My Shopping</a></li>
-                    <li class="active"><a href="<?php echo $path ?>account&my-store">My Store</a></li>
-                    <li><a href="<?php echo $path ?>account&my-sales">My Sales</a></li>
+                    <li><a href="<?php echo $path ?>account&wishlist">Lista de deseos</a></li>
+                    <li><a href="<?php echo $path ?>account&my-shopping">Mis Compras</a></li>
+                    <li class="active"><a href="<?php echo $path ?>account&my-store">Mi Tienda</a></li>
+                    <li><a href="<?php echo $path ?>account&my-sales">Mis Ventas</a></li>
                 </ul>
 
                 <!--=====================================
@@ -40,9 +40,9 @@ My Account Content
 
                         <div class="ps-section__header">
 
-                            <h1>New to MarketPlace?</h1>
+                            <h1>Quieres crear tu tienda?</h1>
 
-                            <h4>Join a marketplace where nearly 50 million buyers around <br> the world shop for unique items</h4>
+                            <h4>Herramienta para la comunidad universida BUAP <br> apoyemos el comercio interunivesitario</h4>
 
                         </div>
 
@@ -66,7 +66,7 @@ My Account Content
                                         href="#terms"
                                         onclick="goTerms()">
                                             <span class="badge badge-secondary">1</span> 
-                                            Accept terms and conditions
+                                            Acepta terminos y condiciones
                                         </button>
                                     
                                     </div>
@@ -90,7 +90,7 @@ My Account Content
                                         <button 
                                         class="btn btn-warning btn-lg disabled btnCreateStore">
                                             <span class="badge badge-secondary">2</span> 
-                                            Create Store
+                                            Crear Tienda
                                         </button>
                                     
                                     </div>
@@ -113,7 +113,7 @@ My Account Content
 
                                         <button class="btn btn-warning btn-lg disabled btnCreateProduct">
                                             <span class="badge badge-secondary">3</span>
-                                             Create Product
+                                             Crear Producto
                                         </button>
                                     
                                     </div>

@@ -6,7 +6,7 @@ Términos y condiciones
 	
 	 <!-- Modal Header -->
     <div class="modal-header">
-        <h4 class="modal-title text-center">1. Terms and conditions</h4>
+        <h4 class="modal-title text-center">1. Terminos y condiciones</h4>
     </div>
 
 
@@ -39,13 +39,13 @@ Términos y condiciones
                 id="accept"
                 onchange="changeAccept(event)">
 
-                <label for="accept">Accept terms and conditions</label>
+                <label for="accept">Accepto terminos y condiciones</label>
 
     		</div>
 
     	</div>
 
-    	<label class="text-danger"><sup>*</sup>Required</label>
+    	<label class="text-danger"><sup>*</sup>Requerido</label>
 
     </div>
 

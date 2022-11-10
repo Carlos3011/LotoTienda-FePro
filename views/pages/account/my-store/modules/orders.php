@@ -3,26 +3,26 @@
 	 <div class="d-flex justify-content-between">
 
 	 	<div>
-            <a href="<?php echo TemplateController::path()  ?>account&my-store?product=new#vendor-store" class="btn btn-lg btn-warning my-3">Create new product</a>
+            <a href="<?php echo TemplateController::path()  ?>account&my-store?product=new#vendor-store" class="btn btn-lg btn-warning my-3">Crear nuevo producto</a>
         </div>
 
         <div>
             <ul class="nav nav-tabs">  
 
                 <li class="nav-item">
-                  <a class="nav-link" href="<?php echo TemplateController::path() ?>account&my-store">Products</a>
+                  <a class="nav-link" href="<?php echo TemplateController::path() ?>account&my-store">Productos</a>
                 </li>
 
                 <li class="nav-item">
-                  <a class="nav-link active" href="<?php echo TemplateController::path() ?>account&my-store&orders">Orders</a>
+                  <a class="nav-link active" href="<?php echo TemplateController::path() ?>account&my-store&orders">Ordenes</a>
                 </li>
 
                 <li class="nav-item">
-                  <a class="nav-link" href="<?php echo TemplateController::path() ?>account&my-store&disputes">Disputes</a>
+                  <a class="nav-link" href="<?php echo TemplateController::path() ?>account&my-store&disputes">Reclamos</a>
                 </li>
 
                 <li class="nav-item">
-                  <a class="nav-link" href="<?php echo TemplateController::path() ?>account&my-store&messages">Messages</a>
+                  <a class="nav-link" href="<?php echo TemplateController::path() ?>account&my-store&messages">Mesajes</a>
                 </li>
                
             </ul>
@@ -42,31 +42,31 @@
                 
                 <th>#</th>   
 
-                <th>Status</th>
+                <th>Estado</th>
 
-                <th>Client</th>  
+                <th>Cliente</th>  
 
-                <th>Email</th>    
+                <th>Correo</th>    
 
-                <th>Country</th>   
+                <th>Campus</th>   
 
-                <th>City</th>
+                <th>Facultad</th>
 
-                <th>Address</th>
+                <th>Punto de entrega</th>
 
-                <th>Phone</th>
+                <th>Telefono</th>
 
-                <th>Product</th>
+                <th>Producto</th>
 
-                <th>Quantity</th>
+                <th>Cantidad</th>
 
-                <th>Details</th>
+                <th>Detalles</th>
 
-                <th>Price</th>
+                <th>Precio</th>
 
-                <th>Process</th>
+                <th>Proceso</th>
 
-                <th>Date</th>
+                <th>Fecha</th>
 
             </tr>
 
@@ -90,7 +90,7 @@ Ventana modal para el proceso de entrega
 	 			
 	 			<!-- Modal Header -->
                 <div class="modal-header">
-                    <h4 class="modal-title">Next Process for <span></span></h4>
+                    <h4 class="modal-title">Siguiente proceso por <span></span></h4>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
 
@@ -110,7 +110,7 @@ Ventana modal para el proceso de entrega
 
                     <div class="form-group submtit">
                         
-                        <button class="ps-btn ps-btn--fullwidth orderUpdate">Save</button>
+                        <button class="ps-btn ps-btn--fullwidth orderUpdate">Guardar</button>
 
                     </div>
 

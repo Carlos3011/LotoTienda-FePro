@@ -16,7 +16,7 @@ Load
 
     <div class="ps-block__header">
 
-        <h3>Best Sale Items</h3>
+        <h3>Articulos mas Vendidos</h3>
 
         <div class="ps-block__navigation">
 
@@ -62,7 +62,7 @@ Load
 
                     <?php if ($item->stock_product == 0): ?>
 
-                        <div class="ps-product__badge out-stock">Out Of Stock</div>
+                        <div class="ps-product__badge out-stock">Sin Existencia</div>
 
                     <?php else: ?>
 

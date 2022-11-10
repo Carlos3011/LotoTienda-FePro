@@ -98,9 +98,9 @@ Breadcrumb
 
         <ul class="breadcrumb">
 
-            <li><a href="/">Home</a></li>
+            <li><a href="/">Inicio</a></li>
 
-            <li>Store List</li>
+            <li>Listado de Tiendas</li>
 
         </ul>
 
@@ -118,7 +118,7 @@ Store List
 
         <div class="ps-section__header">
 
-            <h3>Store list</h3>
+            <h3>Listado de Tiendas</h3>
 
         </div>
 

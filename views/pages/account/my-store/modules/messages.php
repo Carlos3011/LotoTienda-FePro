@@ -3,26 +3,26 @@
 	 <div class="d-flex justify-content-between">
 
 	 	<div>
-            <a href="<?php echo TemplateController::path()  ?>account&my-store?product=new#vendor-store" class="btn btn-lg btn-warning my-3">Create new product</a>
+            <a href="<?php echo TemplateController::path()  ?>account&my-store?product=new#vendor-store" class="btn btn-lg btn-warning my-3">Crear nuevo producto</a>
         </div>
 
         <div>
             <ul class="nav nav-tabs">  
 
                 <li class="nav-item">
-                  <a class="nav-link" href="<?php echo TemplateController::path() ?>account&my-store">Products</a>
+                  <a class="nav-link" href="<?php echo TemplateController::path() ?>account&my-store">Producto</a>
                 </li>
 
                 <li class="nav-item">
-                  <a class="nav-link" href="<?php echo TemplateController::path() ?>account&my-store&orders">Orders</a>
+                  <a class="nav-link" href="<?php echo TemplateController::path() ?>account&my-store&orders">Ordenes</a>
                 </li>
 
                 <li class="nav-item">
-                  <a class="nav-link" href="<?php echo TemplateController::path() ?>account&my-store&disputes">Disputes</a>
+                  <a class="nav-link" href="<?php echo TemplateController::path() ?>account&my-store&disputes">Reclamos</a>
                 </li>
 
                 <li class="nav-item">
-                  <a class="nav-link active" href="<?php echo TemplateController::path() ?>account&my-store&messages">Messages</a>
+                  <a class="nav-link active" href="<?php echo TemplateController::path() ?>account&my-store&messages">Mensajes</a>
                 </li>
                
             </ul>
@@ -42,19 +42,19 @@
                 
                 <th>#</th>
 
-                <th>Product</th>     
+                <th>Producto</th>     
 
-                <th>Client</th>  
+                <th>Cliente</th>  
 
-                <th>Email</th>    
+                <th>Correo</th>    
 
-                <th>Question</th>   
+                <th>Pregunta</th>   
 
-                <th>Answer</th>
+                <th>Respuesta</th>
 
-                <th>Date Answer</th>
+                <th>Fecha de Respuesta</th>
 
-                <th>Date Created</th>
+                <th>Fecha de Creacion</th>
 
             </tr>
 
@@ -78,7 +78,7 @@ Ventana modal para responder la pregunta
 
                 <!-- Modal Header -->
                 <div class="modal-header">
-                    <h4 class="modal-title">Answer Message</h4>
+                    <h4 class="modal-title">Mensaje de Respuesta</h4>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
 
@@ -92,7 +92,7 @@ Ventana modal para responder la pregunta
 
                     <div class="form-group">
 
-                        <label>Type your answer</label>
+                        <label>Escriba su respuesta</label>
 
                         <div class="form-group__content">
                             

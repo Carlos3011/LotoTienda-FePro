@@ -38,9 +38,9 @@ Breadcrumb
 
         <ul class="breadcrumb">
 
-            <li><a href="/">Home</a></li>
+            <li><a href="/">Inicio</a></li>
 
-            <li>Shopping cart</li>
+            <li>Carrito de Compras</li>
 
         </ul>
 
@@ -58,7 +58,7 @@ Shopping Cart
 
         <div class="ps-section__header">
 
-            <h1>Shopping Cart</h1>
+            <h1>Carrito de Compras</h1>
 
         </div>
 
@@ -72,11 +72,10 @@ Shopping Cart
 
                         <tr>
 
-                            <th>Product name</th>
-                            <th>PRICE</th>
-                            <th>SHIPPING</th>
-                            <th>QUANTITY</th>
-                            <th>TOTAL</th>
+                            <th>Nombre del Producto</th>
+                            <th>Precio</th>
+                            <th>Cantidad</th>
+                            <th>Total</th>
                             <th></th>
 
                         </tr>
@@ -234,7 +233,7 @@ Shopping Cart
             <div class="ps-section__cart-actions">
 
                 <a class="ps-btn" href="categories.html.html">
-                    <i class="icon-arrow-left"></i> Back to Shop
+                    <i class="icon-arrow-left"></i> Regresar a la tienda
                 </a>
 
                 <?php if (isset($_COOKIE["listSC"]) && $_COOKIE["listSC"] != "[]"): ?>
@@ -242,7 +241,7 @@ Shopping Cart
 
 
                     <a class="ps-btn" href="<?php echo $path ?>checkout">
-                        Proceed to checkout <i class="icon-arrow-right"></i> 
+                        Proceder con la compra <i class="icon-arrow-right"></i> 
                     </a>
                     
                 <?php endif ?>

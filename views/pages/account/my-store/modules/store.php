@@ -112,7 +112,7 @@ $totalReviews = 0;
 
                     <figure>
 
-                        <figcaption>Follow us on social</figcaption>
+                        <figcaption>Siguenos en nuestras redes sociales</figcaption>
 
                         <ul class="ps-list--social-color">
 
@@ -137,11 +137,11 @@ $totalReviews = 0;
 
             <div class="ps-block__footer">
 
-                <p>Call us directly<strong><small><?= $store[0]->phone_store ?></small></strong></p>
+                <p>Llamenos directamente<strong><small><?= $store[0]->phone_store ?></small></strong></p>
 
-                <p>or Or if you have any question <strong><small><?= $store[0]->email_store ?></small></strong></p>
+                <p>Si tienes alguna pregunta<strong><small><?= $store[0]->email_store ?></small></strong></p>
 
-                <a class="ps-btn ps-btn--fullwidth" data-toggle='modal' data-backdrop='static' data-keyboard='false' data-target='#editStore'>Edit</a>
+                <a class="ps-btn ps-btn--fullwidth" data-toggle='modal' data-backdrop='static' data-keyboard='false' data-target='#editStore'>Editar</a>
 
             </div>
 
@@ -167,7 +167,7 @@ Modal para editar la tienda
    
                 <!-- Modal Header -->
                 <div class="modal-header">
-                    <h4 class="modal-title text-center">Edit Store</h4>
+                    <h4 class="modal-title text-center">Editar Tienda</h4>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
 
@@ -180,7 +180,7 @@ Modal para editar la tienda
 
                     <div class="form-group">
                         
-                        <label>Store Name<sup class="text-danger">*</sup></label>
+                        <label>Nombre de la tienda<sup class="text-danger">*</sup></label>
 
                         <div class="form-group__content">
                             
@@ -192,8 +192,8 @@ Modal para editar la tienda
                             readonly
                             required>
 
-                            <div class="valid-feedback">Valid.</div>
-                            <div class="invalid-feedback">Please fill out this field.</div>
+                            <div class="valid-feedback">Valido.</div>
+                            <div class="invalid-feedback">Por favor rellene este campo.</div>
 
                         </div>
 
@@ -205,7 +205,7 @@ Modal para editar la tienda
 
                     <div class="form-group">
                     
-                        <label>Store Url<sup class="text-danger">*</sup></label>
+                        <label>Url de la tienda<sup class="text-danger">*</sup></label>
 
                         <div class="form-group__content">
                             
@@ -217,8 +217,8 @@ Modal para editar la tienda
                             readonly
                             required>
 
-                            <div class="valid-feedback">Valid.</div>
-                            <div class="invalid-feedback">Please fill out this field.</div>
+                            <div class="valid-feedback">Valido.</div>
+                            <div class="invalid-feedback">Por favor rellene este campo.</div>
 
                         </div>
 
@@ -230,7 +230,7 @@ Modal para editar la tienda
 
                     <div class="form-group">
                     
-                        <label>Store About<sup class="text-danger">*</sup></label>
+                        <label>Información de la tienda<sup class="text-danger">*</sup></label>
 
                         <div class="form-group__content">
                             
@@ -243,8 +243,8 @@ Modal para editar la tienda
                             onchange="validateJS(event,'paragraphs')"
                             required><?= $store[0]->about_store ?></textarea>
 
-                            <div class="valid-feedback">Valid.</div>
-                            <div class="invalid-feedback">Please fill out this field.</div>
+                            <div class="valid-feedback">Valido.</div>
+                            <div class="invalid-feedback">Por favor rellene este campo.</div>
 
                         </div>
 
@@ -256,7 +256,7 @@ Modal para editar la tienda
 
                     <div class="form-group">
                     
-                        <label>Store Email<sup class="text-danger">*</sup></label>
+                        <label>Email de la tienda<sup class="text-danger">*</sup></label>
 
                         <div class="form-group__content">
                             
@@ -267,8 +267,8 @@ Modal para editar la tienda
                             value="<?php echo $store[0]->email_store ?>" 
                             required>
 
-                            <div class="valid-feedback">Valid.</div>
-                            <div class="invalid-feedback">Please fill out this field.</div>
+                            <div class="valid-feedback">Valido.</div>
+                            <div class="invalid-feedback">Por favor rellene este campo.</div>
 
                         </div>
 
@@ -280,7 +280,7 @@ Modal para editar la tienda
 
                     <div class="form-group">
 
-                        <label>Store Country<sup class="text-danger">*</sup></label>
+                        <label>Campus de la tienda<sup class="text-danger">*</sup></label>
 
                         <?php
 
@@ -304,7 +304,7 @@ Modal para editar la tienda
 
                             <?php else: ?>
 
-                                <option value>Select Country</option>
+                                <option value>Seleccione Campus</option>
 
                             <?php endif ?>
 
@@ -316,8 +316,8 @@ Modal para editar la tienda
 
                             </select>
 
-                            <div class="valid-feedback">Valid.</div>
-                            <div class="invalid-feedback">Please fill in this field correctly.</div>
+                            <div class="valid-feedback">Valido.</div>
+                            <div class="invalid-feedback">Por favor rellene este campo.</div>
 
                         </div>
 
@@ -329,7 +329,7 @@ Modal para editar la tienda
 
                     <div class="form-group">
 
-                        <label>Store City<sup>*</sup></label>
+                        <label>Facultad de la tienda<sup>*</sup></label>
 
                         <div class="form-group__content">
 
@@ -342,8 +342,8 @@ Modal para editar la tienda
                             value="<?php echo $store[0]->city_store ?>" 
                             required>
 
-                            <div class="valid-feedback">Valid.</div>
-                            <div class="invalid-feedback">Please fill in this field correctly.</div>
+                            <div class="valid-feedback">Valido.</div>
+                            <div class="invalid-feedback">Por favor rellene este campo.</div>
 
                         </div>
 
@@ -355,7 +355,7 @@ Modal para editar la tienda
 
                     <div class="form-group">
 
-                        <label>Store Phone<sup>*</sup></label>
+                        <label>Telefono de la tienda<sup>*</sup></label>
 
                         <div class="form-group__content input-group">
 
@@ -396,8 +396,8 @@ Modal para editar la tienda
                             value="<?php echo $phone ?>" 
                             required>
 
-                            <div class="valid-feedback">Valid.</div>
-                            <div class="invalid-feedback">Please fill in this field correctly.</div>
+                            <div class="valid-feedback">Valido.</div>
+                            <div class="invalid-feedback">Por favor rellene este campo.</div>
 
                         </div>
 
@@ -409,7 +409,7 @@ Modal para editar la tienda
 
                     <div class="form-group">
 
-                        <label>Store Address<sup>*</sup></label>
+                        <label>Puntos de entrega de la tienda<sup>*</sup></label>
 
                         <div class="form-group__content">
 
@@ -422,8 +422,8 @@ Modal para editar la tienda
                             value="<?php echo $store[0]->address_store ?>" 
                             required>
 
-                            <div class="valid-feedback">Valid.</div>
-                            <div class="invalid-feedback">Please fill in this field correctly.</div>
+                            <div class="valid-feedback">Valido.</div>
+                            <div class="invalid-feedback">Por favor rellene este campo.</div>
 
                         </div>
 
@@ -437,7 +437,7 @@ Modal para editar la tienda
 
                         <input type="hidden" value="<?= $store[0]->logo_store ?>" name="logoStoreOld">
                         
-                        <label>Store Logo<sup class="text-danger">*</sup></label> 
+                        <label>Logo de la tienda<sup class="text-danger">*</sup></label> 
 
                         <div class="form-group__content">
                             
@@ -457,10 +457,10 @@ Modal para editar la tienda
                                 onchange="validateImageJS(event, 'changeLogo')"
                                 >
 
-                                <div class="valid-feedback">Valid.</div>
-                                <div class="invalid-feedback">Please fill out this field.</div>
+                                <div class="valid-feedback">Valido.</div>
+                                <div class="invalid-feedback">Por favor rellene este campo.</div>
 
-                                <label class="custom-file-label" for="logoStore">Choose file</label>
+                                <label class="custom-file-label" for="logoStore">Seleccione el archivo</label>
 
                             </div>
 
@@ -477,7 +477,7 @@ Modal para editar la tienda
 
                          <input type="hidden" value="<?= $store[0]->cover_store ?>" name="coverStoreOld">
                         
-                        <label>Store Cover<sup class="text-danger">*</sup></label> 
+                        <label>Portada de la tienda<sup class="text-danger">*</sup></label> 
 
                         <div class="form-group__content">
                             
@@ -497,10 +497,10 @@ Modal para editar la tienda
                                 onchange="validateImageJS(event, 'changeCover')"
                                 >
 
-                                <div class="valid-feedback">Valid.</div>
-                                <div class="invalid-feedback">Please fill out this field.</div>
+                                <div class="valid-feedback">Valido.</div>
+                                <div class="invalid-feedback">Por favor rellene este campo.</div>
 
-                                <label class="custom-file-label" for="coverStore">Choose file</label>
+                                <label class="custom-file-label" for="coverStore">Selecciones el archivo</label>
 
                             </div>
 
@@ -515,7 +515,7 @@ Modal para editar la tienda
 
                     <div class="form-group">
                         
-                        <label>Social Networks</label>
+                        <label>Redes Sociales</label>
 
                         <?php 
 
@@ -584,8 +584,8 @@ Modal para editar la tienda
                             value="<?php echo $facebook ?>"
                             >
 
-                            <div class="valid-feedback">Valid.</div>
-                            <div class="invalid-feedback">Please fill out this field.</div>
+                            <div class="valid-feedback">Valido.</div>
+                            <div class="invalid-feedback">Por favor rellene este campo.</div>
 
                         </div>
 
@@ -607,8 +607,8 @@ Modal para editar la tienda
                              value="<?php echo $instagram?>"
                             >
 
-                            <div class="valid-feedback">Valid.</div>
-                            <div class="invalid-feedback">Please fill out this field.</div>
+                            <div class="valid-feedback">Valido.</div>
+                            <div class="invalid-feedback">Por favor rellene este campo.</div>
 
                         </div>
 
@@ -630,8 +630,8 @@ Modal para editar la tienda
                              value="<?php echo $twitter ?>"
                             >
 
-                            <div class="valid-feedback">Valid.</div>
-                            <div class="invalid-feedback">Please fill out this field.</div>
+                            <div class="valid-feedback">Valido.</div>
+                            <div class="invalid-feedback">Por favor rellene este campo.</div>
 
                         </div>
 
@@ -653,8 +653,8 @@ Modal para editar la tienda
                              value="<?php echo $linkedin ?>"
                             >
 
-                            <div class="valid-feedback">Valid.</div>
-                            <div class="invalid-feedback">Please fill out this field.</div>
+                            <div class="valid-feedback">Valido.</div>
+                            <div class="invalid-feedback">Por favor rellene este campo.</div>
 
                         </div>
 
@@ -676,8 +676,8 @@ Modal para editar la tienda
                              value="<?php echo $youtube ?>" 
                             >
 
-                            <div class="valid-feedback">Valid.</div>
-                            <div class="invalid-feedback">Please fill out this field.</div>
+                            <div class="valid-feedback">Valido.</div>
+                            <div class="invalid-feedback">Por favor rellene este campo.</div>
 
                         </div>
 
@@ -700,7 +700,7 @@ Modal para editar la tienda
 
                         <button 
                         type="submit"
-                        class="ps-btn ps-btn--fullwidth">Save</button>
+                        class="ps-btn ps-btn--fullwidth">Guardar</button>
 
                     </div>
 

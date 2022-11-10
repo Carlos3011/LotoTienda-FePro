@@ -18,11 +18,11 @@ if($item->reviews_product != null){
 
 <ul class="ps-tab-list">
 
-    <li class="active"><a href="#tab-1">Description</a></li>
-    <li><a href="#tab-2">Details</a></li>
-    <li><a href="#tab-3">Vendor</a></li>
-    <li><a href="#tab-4">Reviews (<?php echo count($allReviews) ?>)</a></li>
-    <li><a href="#tab-5">Questions and Answers</a></li>
+    <li class="active"><a href="#tab-1">Descripcion</a></li>
+    <li><a href="#tab-2">Detalles</a></li>
+    <li><a href="#tab-3">Vendedor</a></li>
+    <li><a href="#tab-4">Reseñas (<?php echo count($allReviews) ?>)</a></li>
+    <li><a href="#tab-5">Preguntas y Respuestas</a></li>
 
 </ul>
 
@@ -355,7 +355,7 @@ if($item->reviews_product != null){
 
                             <?php if (empty($allReviews[$value]["user"])): ?>
 
-                                <h4>Anonimous</h4>
+                                <h4>Anonimo</h4>
 
                             <?php else: ?>
 
@@ -387,7 +387,7 @@ if($item->reviews_product != null){
 
         <div class="ps-block--questions-answers">
 
-            <h3>Questions and Answers</h3>
+            <h3>Preguntas y Respuestas</h3>
 
             <form method="post">
 
@@ -477,7 +477,7 @@ if($item->reviews_product != null){
                                 
                                 <div class="media-body">
 
-                                    <h4><small>Question on <?php echo $value->date_created_message ?> | <?php echo $value->displayname_user ?></small></h4>
+                                    <h4><small>Pregunta sobre <?php echo $value->date_created_message ?> | <?php echo $value->displayname_user ?></small></h4>
 
                                     <p><?php echo $value->content_message ?></p>
                                     
@@ -519,7 +519,7 @@ if($item->reviews_product != null){
                                     
                                     <div class="media-body text-right">
 
-                                        <h4><small>Answer on <?php echo $value->date_answer_message ?> | <?php echo $item->name_store ?></small></h4>
+                                        <h4><small>Respuestas sobre <?php echo $value->date_answer_message ?> | <?php echo $item->name_store ?></small></h4>
 
                                         <p><?php echo $value->answer_message ?></p>
                                         
@@ -543,7 +543,7 @@ if($item->reviews_product != null){
 
     <div class="ps-tab active" id="tab-6">
 
-        <p>Sorry no more offers available</p>
+        <p>Lo sentimos, no hay más ofertas disponibles.</p>
 
     </div>
 

@@ -50,11 +50,11 @@ Breadcrumb
 
         <ul class="breadcrumb">
 
-            <li><a href="/">Home</a></li>
+            <li><a href="/">Inicio</a></li>
 
-            <li><a href="<?php echo $path ?>shopping-cart">Shopping cart</a></li>
+            <li><a href="<?php echo $path ?>shopping-cart">Carrito de Compras</a></li>
 
-            <li>Finish payment</li>
+            <li>Finalizar Pago</li>
 
         </ul>
 
@@ -72,7 +72,7 @@ Finish payment
 
         <div class="ps-section__header">
 
-            <h1>Finish payment</h1>
+            <h1>Finalizar Pago</h1>
 
         </div>
 
@@ -90,7 +90,7 @@ Finish payment
 
                         <div class="ps-form__billing-info">
 
-                            <h3 class="ps-form__heading">Billing Details</h3>
+                            <h3 class="ps-form__heading">Detalles de Compra</h3>
 
                             <!--=====================================
 							Nombre completo del usuario
@@ -98,14 +98,14 @@ Finish payment
 
                             <div class="form-group">
 
-                                <label>Display Name<sup>*</sup></label>
+                                <label>Nombre completo<sup>*</sup></label>
 
                                 <div class="form-group__content">
 
                                     <input class="form-control" value="<?php echo $_SESSION["user"]->displayname_user ?>"  type="text" readonly required>
 
-                                    <div class="valid-feedback">Valid.</div>
-                                    <div class="invalid-feedback">Please fill in this field correctly.</div>
+                                    <div class="valid-feedback">Valido.</div>
+                                    <div class="invalid-feedback">Por favor rellene este campo.</div>
 
                                 </div>
 
@@ -117,14 +117,14 @@ Finish payment
 
                             <div class="form-group">
 
-                                <label>Email Address<sup>*</sup></label>
+                                <label>Correo electronico<sup>*</sup></label>
 
                                 <div class="form-group__content">
 
                                     <input id="emailOrder" class="form-control" type="email" value="<?php echo $_SESSION["user"]->email_user ?>" readonly required>
 
-                                    <div class="valid-feedback">Valid.</div>
-                                    <div class="invalid-feedback">Please fill in this field correctly.</div>
+                                    <div class="valid-feedback">Valido.</div>
+                                    <div class="invalid-feedback">Por favor rellene este campo.</div>
 
                                 </div>
 
@@ -159,7 +159,7 @@ Finish payment
 
                                     <?php else: ?>
 
-                                    	<option value>Select Campus</option>
+                                    	<option value>Seleccione Campus</option>
 
                                     <?php endif ?>
 
@@ -171,8 +171,8 @@ Finish payment
 
                                     </select>
 
-                                    <div class="valid-feedback">Valid.</div>
-                                    <div class="invalid-feedback">Please fill in this field correctly.</div>
+                                    <div class="valid-feedback">Valido.</div>
+                                    <div class="invalid-feedback">Por favor rellene este campo.</div>
 
                                 </div>
 
@@ -184,7 +184,7 @@ Finish payment
 
                             <div class="form-group">
 
-                                <label>Faculty<sup>*</sup></label>
+                                <label>Facultad<sup>*</sup></label>
 
                                 <div class="form-group__content">
 
@@ -197,8 +197,8 @@ Finish payment
                                     value="<?php echo $_SESSION["user"]->city_user ?>" 
                                     required>
 
-                                    <div class="valid-feedback">Valid.</div>
-                                    <div class="invalid-feedback">Please fill in this field correctly.</div>
+                                    <div class="valid-feedback">Valido.</div>
+                                    <div class="invalid-feedback">Por favor rellene este campo.</div>
 
                                 </div>
 
@@ -210,7 +210,7 @@ Finish payment
 
                             <div class="form-group">
 
-                                <label>Phone<sup>*</sup></label>
+                                <label>Telefono<sup>*</sup></label>
 
                                 <div class="form-group__content input-group">
 
@@ -251,8 +251,8 @@ Finish payment
                                     value="<?php echo $phone ?>" 
                                     required>
 
-                                    <div class="valid-feedback">Valid.</div>
-                                    <div class="invalid-feedback">Please fill in this field correctly.</div>
+                                    <div class="valid-feedback">Valido.</div>
+                                    <div class="invalid-feedback">Por favor rellene este campo.</div>
 
                                 </div>
 
@@ -264,7 +264,7 @@ Finish payment
 
                             <div class="form-group">
 
-                                <label>Delivery Location<sup>*</sup></label>
+                                <label>Punto de entrega<sup>*</sup></label>
 
                                 <div class="form-group__content">
  
@@ -277,8 +277,8 @@ Finish payment
                                     value="<?php echo $_SESSION["user"]->address_user ?>" 
                                     required>
 
-                                    <div class="valid-feedback">Valid.</div>
-                                    <div class="invalid-feedback">Please fill in this field correctly.</div>
+                                    <div class="valid-feedback">Valido.</div>
+                                    <div class="invalid-feedback">Por favor rellene este campo.</div>
 
                                 </div>
 
@@ -304,11 +304,11 @@ Finish payment
 							Información adicional de la orden
 							======================================--> 
 
-                            <h3 class="mt-40"> Addition information</h3>
+                            <h3 class="mt-40"> Informacion adicional</h3>
 
                             <div class="form-group">
 
-                                <label>Order Notes</label>
+                                <label>Notas de la orden</label>
 
                                 <div class="form-group__content">
 
@@ -318,10 +318,10 @@ Finish payment
                                     rows="7"
                                     pattern='[-\\(\\)\\=\\%\\&\\$\\;\\_\\*\\"\\#\\?\\¿\\!\\¡\\:\\,\\.\\0-9a-zA-ZñÑáéíóúÁÉÍÓÚ ]{1,}'
                                     onchange="validateJS(event, 'paragraphs')"   
-                                    placeholder="Notes about your order, e.g. special notes for delivery."></textarea>
+                                    placeholder="Notas para su orden. e.j : Punto de encuentro para recibir el producto en cualquier lugar de cu o ccu"></textarea>
 
-                                    <div class="valid-feedback">Valid.</div>
-                                    <div class="invalid-feedback">Please fill in this field correctly.</div>
+                                    <div class="valid-feedback">Valido.</div>
+                                    <div class="invalid-feedback">Por favor rellene este campo.</div>
 
                                 </div>
 
@@ -339,7 +339,7 @@ Finish payment
 
                         <div class="ps-form__total">
 
-                            <h3 class="ps-form__heading">Your Order</h3>
+                            <h3 class="ps-form__heading">Su orden</h3>
 
                             <div class="content">
 
@@ -347,7 +347,7 @@ Finish payment
 
                                     <div class="ps-block__header d-flex justify-content-between">
 
-                                        <p>Product</p>
+                                        <p>Producto</p>
 
                                         <p>Total</p>
 
@@ -450,25 +450,13 @@ Finish payment
 
 	                                                        </div>
 
-	                                                        <!--=====================================
-															Precio de envío del producto
-															======================================--> 
-
-															<div>Shipping: <?php echo $pOrder->shipping_product * $value["quantity"] ?> </div>
-
-															<?php 
-
-																$subTotalOrder += $pOrder->shipping_product * $value["quantity"];
-																
-
-															?>
 
 
 	                                                        <!--=====================================
 															Cantidad del producto
 															======================================--> 
 
-	                                                        <div>Quantity: <span class="quantityOrder"><?php echo $value["quantity"] ?></span> </div>
+	                                                        <div>Cantidad: <span class="quantityOrder"><?php echo $value["quantity"] ?></span> </div>
 
                                                         </div>
                                                     </td>
@@ -534,7 +522,7 @@ Finish payment
                                         onchange="changeMethodPaid(event)"
                                         checked>
 
-                                        <label for="pay-paypal">Pay with paypal?  <span><img src="img/payment-method/paypal.jpg" class="w-50"></span></label>
+                                        <label for="pay-paypal">Quieres pagar con PayPal?  <span><img src="img/payment-method/paypal.jpg" class="w-50"></span></label>
 
                                     </div>
 
@@ -570,13 +558,13 @@ Finish payment
                                         value="mercado-pago"
                                         onchange="changeMethodPaid(event)">
 
-                                        <label for="pay-mercadopago">Pay with Mercado Pago? <span><img src="img/payment-method/mercado_pago.jpg" class="w-50"></span></label>
+                                        <label for="pay-mercadopago">Quieres pagar con MercadoPago? <span><img src="img/payment-method/mercado_pago.jpg" class="w-50"></span></label>
 
                                     </div>
 
                                 </div>
 
-                                <button type="submit" class="ps-btn ps-btn--fullwidth">Proceed to checkout</button>
+                                <button type="submit" class="ps-btn ps-btn--fullwidth">Proceder con la compra</button>
 
                             </div>
 

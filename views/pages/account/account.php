@@ -8,15 +8,15 @@ Breadcrumb
 
         <ul class="breadcrumb">
 
-            <li><a href="/">Home</a></li>
+            <li><a href="/">Inicio</a></li>
 
-            <li>My Account</li>
+            <li>Mi Cuenta</li>
 
         </ul>
 
         <?php if (isset($_SESSION["user"])): ?>
 
-            <a href="<?php echo $path ?>account&logout" class="float-right">Logout</a>
+            <a href="<?php echo $path ?>account&logout" class="float-right">Salir</a>
             
         <?php endif ?>
 

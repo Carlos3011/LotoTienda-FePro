@@ -116,11 +116,11 @@
 
             <?php if ($item->stock_product == 0): ?>
 
-                Status:<strong class="ps-tag--out-stock"> Out of stock</strong>
+                Status:<strong class="ps-tag--out-stock"> Sin existencias</strong>
 
             <?php else: ?>
 
-                Status:<a href=""><strong class="ps-tag--in-stock"> In stock</strong></a>
+                Status:<a href=""><strong class="ps-tag--in-stock"> En existencia</strong></a>
                 
             <?php endif ?>
 
@@ -203,7 +203,7 @@
      
                     <figure>
 
-                        <figcaption><?php echo array_keys($value)[0] ?> <strong> Choose an option</strong></figcaption>
+                        <figcaption><?php echo array_keys($value)[0] ?> <strong>Elige una opcion</strong></figcaption>
 
                     </figure>
 
@@ -261,24 +261,24 @@
 
         <figure>
 
-            <figcaption> Don't Miss Out! This promotion will expires in</figcaption>
+            <figcaption> ¡No te lo pierdas! Esta promoción expirará en</figcaption>
 
             <ul class="ps-countdown" data-time="<?php echo json_decode($item->offer_product, true)[2] ?>">
 
                 <li><span class="days"></span>
-                    <p>Days</p>
+                    <p>Dias</p>
                 </li>
 
                 <li><span class="hours"></span>
-                    <p>Hours</p>
+                    <p>Horas</p>
                 </li>
 
                 <li><span class="minutes"></span>
-                    <p>Minutes</p>
+                    <p>Minutos</p>
                 </li>
 
                 <li><span class="seconds"></span>
-                    <p>Seconds</p>
+                    <p>Segundos</p>
                 </li>
 
             </ul>
@@ -287,13 +287,13 @@
 
         <figure>
 
-            <figcaption>Sold Items</figcaption>
+            <figcaption>Articulos Vendidos</figcaption>
 
             <div class="ps-product__progress-bar ps-progress" data-value="<?php echo $item->stock_product ?>">
 
                 <div class="ps-progress__value"><span></span></div>
 
-                <p><b><?php echo $item->stock_product ?>/100</b> Sold</p>
+                <p><b><?php echo $item->stock_product ?>/100</b> Vendidos</p>
 
             </div>
 
@@ -311,7 +311,7 @@
 
         <figure>
 
-            <figcaption>Quantity</figcaption>
+            <figcaption>Cantidad</figcaption>
 
             <div class="form-group--number quantity">
 
@@ -340,13 +340,13 @@
         onclick="addShoppingCart('<?php echo $item->url_product ?>','<?php echo CurlController::api() ?>', '<?php echo $_SERVER["REQUEST_URI"] ?>', this)"
         detailsSC
         quantitySC
-        >Add to cart</a>
+        >Agregar al carrito</a>
 
         <a class="ps-btn" 
         onclick="addShoppingCart('<?php echo $item->url_product ?>','<?php echo CurlController::api() ?>', '<?php echo $path ?>checkout', this)"
         detailsSC
         quantitySC
-        >Buy Now</a>
+        >Comprar Ahora</a>
 
         <div class="ps-product__actions">
 
@@ -360,13 +360,13 @@
 
     <div class="ps-product__specification">
 
-    	<a class="report" href="#">Report Abuse</a>
+    	<a class="report" href="#">Reportar Abuso</a>
 
         <p><strong>SKU:</strong> SF1133569600-1</p>
 
         <p class="categories">
 
-        	<strong> Categories:</strong>
+        	<strong> Categorias:</strong>
 
         	<a href="<?php echo $path.$item->url_category ?>"><?php echo $item->name_category ?></a>,
             <a href="<?php echo $path.$item->url_subcategory ?>"><?php echo $item->name_subcategory ?></a>,
@@ -374,7 +374,7 @@
 
         </p>
 
-        <p class="tags"><strong> Tags</strong>
+        <p class="tags"><strong> Palabras Clave</strong>
 
          <?php 
 

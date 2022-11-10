@@ -2,7 +2,7 @@
 
     <div class="ps-section__header">
 
-        <h3>Related products</h3>
+        <h3>Productos Relacionados</h3>
 
     </div>
 
@@ -33,7 +33,7 @@
 
                     <?php if ($item->stock_product == 0): ?>
 
-                        <div class="ps-product__badge out-stock">Out Of Stock</div>
+                        <div class="ps-product__badge out-stock">Sin existencia</div>
 
                     <?php else: ?>
 

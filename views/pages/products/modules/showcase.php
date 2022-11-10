@@ -20,7 +20,7 @@ Load
 
     <div class="ps-shopping__header">
 
-        <p><strong> <?php echo $totalProducts ?></strong> Products found</p>
+        <p><strong> <?php echo $totalProducts ?></strong>Productos encontrados</p>
 
         <div class="ps-shopping__actions">
 

@@ -3,26 +3,26 @@
 	 <div class="d-flex justify-content-between">
 
 	 	<div>
-            <a href="<?php echo TemplateController::path()  ?>account&my-store?product=new#vendor-store" class="btn btn-lg btn-warning my-3">Create new product</a>
+            <a href="<?php echo TemplateController::path()  ?>account&my-store?product=new#vendor-store" class="btn btn-lg btn-warning my-3">Crear nuevo producto</a>
         </div>
 
         <div>
             <ul class="nav nav-tabs">  
 
                 <li class="nav-item">
-                  <a class="nav-link" href="<?php echo TemplateController::path() ?>account&my-store">Products</a>
+                  <a class="nav-link" href="<?php echo TemplateController::path() ?>account&my-store">Productos</a>
                 </li>
 
                 <li class="nav-item">
-                  <a class="nav-link" href="<?php echo TemplateController::path() ?>account&my-store&orders">Orders</a>
+                  <a class="nav-link" href="<?php echo TemplateController::path() ?>account&my-store&orders">Ordenes</a>
                 </li>
 
                 <li class="nav-item">
-                  <a class="nav-link active" href="<?php echo TemplateController::path() ?>account&my-store&disputes">Disputes</a>
+                  <a class="nav-link active" href="<?php echo TemplateController::path() ?>account&my-store&disputes">Reclamos</a>
                 </li>
 
                 <li class="nav-item">
-                  <a class="nav-link" href="<?php echo TemplateController::path() ?>account&my-store&messages">Messages</a>
+                  <a class="nav-link" href="<?php echo TemplateController::path() ?>account&my-store&messages">Mesajes</a>
                 </li>
                
             </ul>
@@ -42,19 +42,19 @@
                 
                 <th>#</th>
 
-                <th>Order</th>     
+                <th>Orden</th>     
 
-                <th>Client</th>  
+                <th>Cliente</th>  
 
-                <th>Email</th>    
+                <th>Correo</th>    
 
-                <th>Content</th>   
+                <th>Contenido</th>   
 
-                <th>Answer</th>
+                <th>Pregunta</th>
 
-                <th>Date Answer</th>
+                <th>Fecha de pregunta</th>
 
-                <th>Date Created</th>
+                <th>Fecha de creacion</th>
 
             </tr>
 
@@ -78,7 +78,7 @@ Ventana modal para responder la disputa
 
                 <!-- Modal Header -->
                 <div class="modal-header">
-                    <h4 class="modal-title">Answer Dispute</h4>
+                    <h4 class="modal-title">Pregunta de Reclamo</h4>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
 
@@ -91,7 +91,7 @@ Ventana modal para responder la disputa
 
                     <div class="form-group">
 
-                        <label>Type your answer</label>
+                        <label>Escriba su pregunta</label>
 
                         <div class="form-group__content">
                             
@@ -111,7 +111,7 @@ Ventana modal para responder la disputa
                 <div class="modal-footer">
 
                     <div class="float-right">
-                        <button type="submit" class="btn btn-warning btn-lg">Send</button>
+                        <button type="submit" class="btn btn-warning btn-lg">Enviar</button>
                     </div>
                    
                 </div>

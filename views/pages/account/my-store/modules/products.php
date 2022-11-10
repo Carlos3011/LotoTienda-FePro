@@ -22,26 +22,26 @@ if($_GET["product"] != "new"){
     <div class="d-flex justify-content-between">
     
         <div>
-            <a href="<?php echo TemplateController::path()  ?>account&my-store?product=new#vendor-store" class="btn btn-lg btn-warning my-3">Create new product</a>
+            <a href="<?php echo TemplateController::path()  ?>account&my-store?product=new#vendor-store" class="btn btn-lg btn-warning my-3">Crear nuevo producto</a>
         </div>
         
         <div>
             <ul class="nav nav-tabs">  
 
                 <li class="nav-item">
-                  <a class="nav-link active" href="<?php echo TemplateController::path() ?>account&my-store">Products</a>
+                  <a class="nav-link active" href="<?php echo TemplateController::path() ?>account&my-store">Productos</a>
                 </li>
 
                 <li class="nav-item">
-                  <a class="nav-link" href="<?php echo TemplateController::path() ?>account&my-store&orders">Orders</a>
+                  <a class="nav-link" href="<?php echo TemplateController::path() ?>account&my-store&orders">Ordenes</a>
                 </li>
 
                 <li class="nav-item">
-                  <a class="nav-link" href="<?php echo TemplateController::path() ?>account&my-store&disputes">Disputes</a>
+                  <a class="nav-link" href="<?php echo TemplateController::path() ?>account&my-store&disputes">Reclamos</a>
                 </li>
 
                 <li class="nav-item">
-                  <a class="nav-link" href="<?php echo TemplateController::path() ?>account&my-store&messages">Messages</a>
+                  <a class="nav-link" href="<?php echo TemplateController::path() ?>account&my-store&messages">Mesajes</a>
                 </li>
                
             </ul>
@@ -62,59 +62,47 @@ if($_GET["product"] != "new"){
                 
                 <th>#</th>   
 
-                 <th>Actions</th>
+                <th>Acciones</th>
 
-                <th>Feedback</th>  
+                <th>Retroalimentacion</th>  
 
-                <th>State</th>    
+                <th>Estado</th>    
 
-                <th>Image</th>   
+                <th>Imagen</th>   
 
-                <th>Name</th>
+                <th>Nombre</th>
 
-                <th>Category</th>
+                <th>Categoria</th>
 
-                <th>Subcategory</th>
+                <th>Subcategoria</th>
 
-                 <th>Price</th>
+                <th>Precio</th>
 
-                <th>Shipping</th>
+                <th>En existencia</th>
 
-                <th>Stock</th>
+                <th>Oferta</th>
 
-                <th>Delivery time</th>
+                <th>Resumen</th>
 
-                <th>Offer</th>
+                <th>Especificacion</th>
 
-                <th>Summary</th>
+                <th>Detalles</th>
 
-                <th>Specification</th>
+               <th>Descripcion</th>      
 
-                <th>Details</th>
-
-               <th>Description</th>      
-
-               <th>Gallery</th>
-
-                <th>Top Banner</th>
-
-                <th>Default Banner</th>
-
-                <th>Horizontal Slider</th>
-
-                <th>Vertical Slider</th>
+               <th>Galleria</th>
 
                 <th>Video</th>
 
-                <th>Tags</th>
+                <th>Palabras claves</th>
 
-                <th>Views</th>
+                <th>Vistas</th>
 
-                <th>Sales</th>
+                <th>Ventas</th>
 
-                <th>Reviews</th>
+                <th>Reseñas</th>
 
-                <th>Date Created</th> 
+                <th>Fecha de creacion</th> 
 
             </tr>
 

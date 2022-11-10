@@ -108,10 +108,10 @@ My Account Content
             <div class="ps-section__content">
 
                   <ul class="ps-section__links">
-                    <li><a href="<?php echo $path ?>account&wishlist">My Wishlist</a></li>
-                    <li class="active"><a href="<?php echo $path ?>account&my-shopping">My Shopping</a></li>
-                    <li><a href="<?php echo $path ?>account&my-store">My Store</a></li>
-                    <li><a href="<?php echo $path ?>account&my-sales">My Sales</a></li>
+                    <li><a href="<?php echo $path ?>account&wishlist">Lista de Deseos</a></li>
+                    <li class="active"><a href="<?php echo $path ?>account&my-shopping">Mis Compras</a></li>
+                    <li><a href="<?php echo $path ?>account&my-store">Mi Tienda</a></li>
+                    <li><a href="<?php echo $path ?>account&my-sales">Mis Ventas/Trueques</a></li>
                 </ul>
 
                 <!--=====================================
@@ -126,15 +126,15 @@ My Account Content
 
                             <tr>      
 
-                                <th>Product name</th>
+                                <th>Nombre del producto</th>
 
-                                <th>Proccess</th>
+                                <th>Proceso</th>
 
-                                <th>Price</th>
+                                <th>Precio</th>
 
-                                <th>Quantity</th>
+                                <th>Cantidad</th>
 
-                                <th>Review</th>
+                                <th>Reseña</th>
 
                             </tr>
 
@@ -237,7 +237,7 @@ My Account Content
                                         idStore="<?php echo $value->id_store_order ?>" 
                                         emailStore="<?php echo $value->email_store ?>"
                                         nameStore="<?php echo $value->name_store ?>"
-                                        >Open Dispute</a> 
+                                        >Abrir Reclamo</a> 
 
                                         <!--=====================================
                                         Visualizar las disputas
@@ -256,7 +256,7 @@ My Account Content
                                                             
                                                             <div class="media-body">
 
-                                                                <h4><small>Dispute on <?php echo $item->date_created_dispute ?></small></h4>
+                                                                <h4><small>Reclamo sobre <?php echo $item->date_created_dispute ?></small></h4>
 
                                                                 <p><?php echo $item->content_dispute ?></p>
                                                                 
@@ -298,7 +298,7 @@ My Account Content
                                                                 
                                                                 <div class="media-body text-right">
 
-                                                                    <h4><small>Answer on <?php echo $item->date_answer_dispute ?></small></h4>
+                                                                    <h4><small>Respuesta sobre<?php echo $item->date_answer_dispute ?></small></h4>
 
                                                                     <p><?php echo $item->answer_dispute ?></p>
                                                                     
@@ -409,11 +409,11 @@ My Account Content
                                                 
                                                 <?php if ($rating != 0): ?>
 
-                                                    Edit comment
+                                                    Editar comentario
 
                                                 <?php else: ?>
 
-                                                    Add comment
+                                                    Agregar comentario
 
                                                 <?php endif ?>       
 
@@ -421,7 +421,7 @@ My Account Content
 
                                          <?php else: ?>
 
-                                            <a class="btn btn-warning btn-lg disabled" href="#">Add comment</a>
+                                            <a class="btn btn-warning btn-lg disabled" href="#">Agregar comentario</a>
 
                                         <?php endif ?>
 
@@ -465,7 +465,7 @@ Modal para las disputas
 
                 <!-- Modal Header -->
                 <div class="modal-header">
-                    <h4 class="modal-title">New Dispute</h4>
+                    <h4 class="modal-title">Nuevo Reclamo</h4>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
 
@@ -480,7 +480,7 @@ Modal para las disputas
 
                     <div class="form-group">
 
-                        <label>Type your message</label>
+                        <label>Escriba su mensaje</label>
 
                         <div class="form-group__content">
                             
@@ -500,7 +500,7 @@ Modal para las disputas
                 <div class="modal-footer">
 
                     <div class="float-right">
-                        <button type="submit" class="btn btn-warning btn-lg">Send</button>
+                        <button type="submit" class="btn btn-warning btn-lg">Enviar</button>
                     </div>
                    
                 </div>
@@ -535,7 +535,7 @@ Modal para las calificaciones
 
                 <!-- Modal Header -->
                 <div class="modal-header">
-                    <h4 class="modal-title">New Review</h4>
+                    <h4 class="modal-title">Nueva Reseña</h4>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
 
@@ -547,7 +547,7 @@ Modal para las calificaciones
 
                     <div class="form-group form-group__rating">
 
-                        <label>Your rating of this product</label>
+                        <label>Su calificacion para este producto</label>
 
                         <select class="ps-rating" name="rating" data-read-only="false">
 
@@ -564,7 +564,7 @@ Modal para las calificaciones
 
                     <div class="form-group">
 
-                        <label>Type your message</label>
+                        <label>Escriba su mensaje</label>
 
                         <div class="form-group__content">
                             

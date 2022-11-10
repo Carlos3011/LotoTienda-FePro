@@ -7,11 +7,11 @@
                 <ul class="ps-tab-list">
 
                     <li>
-                        <p><a href="<?php echo $path ?>account&login">Login</a></p>
+                        <p><a href="<?php echo $path ?>account&login">Ingresar</a></p>
                     </li>
 
                     <li class="active">
-                        <p><a href="<?php echo $path ?>account&enrollment">Register</a></p>
+                        <p><a href="<?php echo $path ?>account&enrollment">Registrarse</a></p>
                     </li>
 
                 </ul>
@@ -28,7 +28,7 @@
 
                         <div class="ps-form__content">
 
-                            <h5>Register An Account</h5>
+                            <h5>Registrar una cuenta</h5>
 
                             <div class="form-group">
 
@@ -41,8 +41,8 @@
                                 name="regFirstName"
                                 required>
 
-                                <div class="valid-feedback">Valid.</div>
-                                <div class="invalid-feedback">Please fill in this field correctly.</div>
+                                <div class="valid-feedback">Valido.</div>
+                                <div class="invalid-feedback">Por favor complete  el formulario correctamente.</div>
 
                             </div>
 
@@ -57,8 +57,8 @@
                                 name="regLastName"
                                 required>
 
-                                <div class="valid-feedback">Valid.</div>
-                                <div class="invalid-feedback">Please fill in this field correctly.</div>
+                                <div class="valid-feedback">Valido.</div>
+                                <div class="invalid-feedback">Por favor complete  el formulario correctamente.</div>
 
                             </div>
 
@@ -74,8 +74,8 @@
                                 name="regEmail"
                                 required>
 
-                                <div class="valid-feedback">Valid.</div>
-                                <div class="invalid-feedback">Please fill in this field correctly.</div>
+                                <div class="valid-feedback">Valido.</div>
+                                <div class="invalid-feedback">Por favor complete  el formulario correctamente.</div>
 
                             </div>
 
@@ -90,8 +90,8 @@
                                 name="regPassword"
                                 required>
 
-                                <div class="valid-feedback">Valid.</div>
-                                <div class="invalid-feedback">Please fill in this field correctly.</div>
+                                <div class="valid-feedback">Valido.</div>
+                                <div class="invalid-feedback">Por favor complete  el formulario correctamente.</div>
 
                             </div>
 
@@ -104,7 +104,7 @@
 
                             <div class="form-group submtit">
 
-                                <button type="submit" class="ps-btn ps-btn--fullwidth">Register</button>
+                                <button type="submit" class="ps-btn ps-btn--fullwidth">Registrarse</button>
 
                             </div>
 
@@ -112,7 +112,7 @@
 
                         <div class="ps-form__footer">
 
-                            <p>Connect with:</p>
+                            <p>Conectar con:</p>
 
                             <ul class="ps-list--social">
 

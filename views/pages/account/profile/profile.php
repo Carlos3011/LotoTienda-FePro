@@ -166,7 +166,7 @@ if($responseStore->status == 200){
 
             <?php if ($_SESSION["user"]->method_user == "direct"): ?>
 
-                <button class="btn btn-warning btn-lg" data-toggle="modal" data-target="#changePassword">Change Password</button>
+                <button class="btn btn-warning btn-lg" data-toggle="modal" data-target="#changePassword">Cambiar Contraseña</button>
                 
             <?php endif ?>
 
@@ -180,7 +180,7 @@ if($responseStore->status == 200){
                 <div class="text-center">
                     <a href="<?php echo TemplateController::path() ?>account&my-store&orders">
                         <h1><i class="fas fa-shopping-cart text-white"></i></h1>
-                        <h4 class="text-white">Orders <span class="badge badge-secondary rounded-circle"><?php echo $totalOrder ?></span></h4>
+                        <h4 class="text-white">Ordenes <span class="badge badge-secondary rounded-circle"><?php echo $totalOrder ?></span></h4>
                     </a>
                 </div>
             </div><!-- box /-->
@@ -189,7 +189,7 @@ if($responseStore->status == 200){
                 <div class="text-center">
                     <a href="<?php echo TemplateController::path() ?>account&my-store">
                         <h1><i class="fas fa-shopping-bag text-white"></i></h1>
-                        <h4 class="text-white">Products <span class="badge badge-secondary rounded-circle"><?php echo $totalProduct ?></span></h4>
+                        <h4 class="text-white">Productos <span class="badge badge-secondary rounded-circle"><?php echo $totalProduct ?></span></h4>
                     </a>
                 </div>
             </div><!-- box /-->
@@ -198,7 +198,7 @@ if($responseStore->status == 200){
                 <div class="text-center">
                     <a href="<?php echo TemplateController::path() ?>account&my-store&disputes">
                         <h1><i class="fas fa-bell text-white"></i></h1>
-                        <h4 class="text-white">Disputes <span class="badge badge-secondary rounded-circle"><?php echo $totalDispute ?></span></h4>
+                        <h4 class="text-white">Reclamos <span class="badge badge-secondary rounded-circle"><?php echo $totalDispute ?></span></h4>
                     </a>
                 </div>
             </div><!-- box /-->
@@ -207,7 +207,7 @@ if($responseStore->status == 200){
                 <div class="text-center">
                     <a href="<?php echo TemplateController::path() ?>account&my-store&messages">
                         <h1><i class="fas fa-comments text-white"></i></h1>
-                        <h4 class="text-white">Messages <span class="badge badge-secondary rounded-circle"><?php echo $totalMessage ?></span></h4>
+                        <h4 class="text-white">Mensajes <span class="badge badge-secondary rounded-circle"><?php echo $totalMessage ?></span></h4>
                     </a>
                 </div>
             </div><!-- box /-->
@@ -232,7 +232,7 @@ Ventana modal para cambiar contraseña
 
       <!-- Modal Header -->
       <div class="modal-header">
-        <h4 class="modal-title">Change Password</h4>
+        <h4 class="modal-title">Cambiar Contraseña</h4>
         <button type="button" class="close" data-dismiss="modal">&times;</button>
       </div>
 
@@ -252,8 +252,8 @@ Ventana modal para cambiar contraseña
                 name="changePassword"
                 required>
 
-                <div class="valid-feedback">Valid.</div>
-                <div class="invalid-feedback">Please fill in this field correctly.</div>
+                <div class="valid-feedback">Valido.</div>
+                <div class="invalid-feedback">Por favor rellene este campo.</div>
 
             </div>
 
@@ -266,7 +266,7 @@ Ventana modal para cambiar contraseña
 
             <div class="form-group submtit">
 
-                <button type="submit" class="ps-btn ps-btn--fullwidth">Submit</button>
+                <button type="submit" class="ps-btn ps-btn--fullwidth">Enviar</button>
 
             </div>
 
@@ -278,7 +278,7 @@ Ventana modal para cambiar contraseña
 
       <!-- Modal footer -->
       <div class="modal-footer">
-        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
       </div>
 
     </div>
@@ -296,7 +296,7 @@ Ventana modal para cambiar fotografía
 
       <!-- Modal Header -->
       <div class="modal-header">
-        <h4 class="modal-title">Change Picture</h4>
+        <h4 class="modal-title">Cambiar Fotografía</h4>
         <button type="button" class="close" data-dismiss="modal">&times;</button>
       </div>
 
@@ -305,7 +305,7 @@ Ventana modal para cambiar fotografía
         
         <form method="post" class="ps-form--account ps-tab-root needs-validation" novalidate enctype="multipart/form-data">
 
-           <small class="helsmall-block small">Dimensions: 200px * 200px | Max Size. 2MB | Format: JPG o PNG</p>
+           <small class="helsmall-block small">Dimencion: 200px * 200px | Tamaño maximo. 2MB | Formato: JPG o PNG</p>
             
             <div class="custom-file">
                 
@@ -318,7 +318,7 @@ Ventana modal para cambiar fotografía
                 onchange="validateImageJS(event, 'changePicture')"
                 required>
 
-                <label for="customFile" class="custom-file-label">Choose file</label>
+                <label for="customFile" class="custom-file-label">Seleccione el archivo</label>
 
             </div>
 
@@ -337,7 +337,7 @@ Ventana modal para cambiar fotografía
 
             <div class="form-group submtit">
 
-                <button type="submit" class="ps-btn ps-btn--fullwidth">Submit</button>
+                <button type="submit" class="ps-btn ps-btn--fullwidth">Enviar</button>
 
             </div>
 
@@ -349,7 +349,7 @@ Ventana modal para cambiar fotografía
 
       <!-- Modal footer -->
       <div class="modal-footer">
-        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
       </div>
 
     </div>

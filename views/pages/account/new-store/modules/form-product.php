@@ -6,7 +6,7 @@ Crear Producto
 	
 	<!-- Modal Header -->
     <div class="modal-header">
-        <h4 class="modal-title text-center">3. Create Product</h4>
+        <h4 class="modal-title text-center">3. Crear Producto</h4>
     </div>
 
     <!-- Modal body -->
@@ -17,8 +17,8 @@ Crear Producto
         ======================================-->
 
         <div class="form-group">
-        
-            <label>Product Name<sup class="text-danger">*</sup></label>
+            
+            <label>Nombre del producto<sup class="text-danger">*</sup></label>
 
             <div class="form-group__content">
                 
@@ -29,8 +29,8 @@ Crear Producto
                 onchange="validateDataRepeat(event,'product')"
                 required>
 
-                <div class="valid-feedback">Valid.</div>
-                <div class="invalid-feedback">Please fill out this field.</div>
+                <div class="valid-feedback">Valido.</div>
+                <div class="invalid-feedback">Por favor rellene este campo.</div>
 
             </div>
 
@@ -41,8 +41,8 @@ Crear Producto
         ======================================-->
 
         <div class="form-group">
-        
-            <label>Product Url<sup class="text-danger">*</sup></label>
+            
+            <label>Url del producto<sup class="text-danger">*</sup></label>
 
             <div class="form-group__content">
                 
@@ -52,8 +52,8 @@ Crear Producto
                 readonly
                 required>
 
-                <div class="valid-feedback">Valid.</div>
-                <div class="invalid-feedback">Please fill out this field.</div>
+                <div class="valid-feedback">Valido.</div>
+                <div class="invalid-feedback">Por favor rellene este campo.</div>
 
             </div>
 
@@ -65,7 +65,7 @@ Crear Producto
 
         <div class="form-group">
             
-            <label>Product Category<sup class="text-danger">*</sup></label>
+            <label>Categoría del producto<sup class="text-danger">*</sup></label>   
 
             <?php 
 
@@ -86,7 +86,7 @@ Crear Producto
                 onchange="changeCategory(event)"
                 required>
 
-                    <option value="">Select Category</option>
+                    <option value="">Seleccione Categoria</option>
 
                     <?php foreach ($categories as $key => $value): ?>
 
@@ -96,8 +96,8 @@ Crear Producto
 
                 </select>
 
-                <div class="valid-feedback">Valid.</div>
-                <div class="invalid-feedback">Please fill out this field.</div>
+                <div class="valid-feedback">Valido.</div>
+                <div class="invalid-feedback">Por favor rellene este campo.</div>
 
             </div>
 
@@ -108,8 +108,8 @@ Crear Producto
         ======================================-->
 
         <div class="form-group subCategoryProduct" style="display:none">
-            
-            <label>Product SubCategory<sup class="text-danger">*</sup></label>
+                
+            <label>Subcategoría del producto<sup class="text-danger">*</sup></label>
 
             <div class="form-group__content">
                     
@@ -118,14 +118,14 @@ Crear Producto
                 name="subCategoryProduct"
                 required>
                     
-                    <option value="">Select Subcategory</option>
+                    <option value="">Seleccione la Subcategoria</option>
 
                 </select>
 
-                <div class="valid-feedback">Valid.</div>
-                <div class="invalid-feedback">Please fill out this field.</div>
+                <div class="valid-feedback">Valido.</div>
+                <div class="invalid-feedback">Por favor rellene este campo.</div>
 
-           </div>
+            </div>
 
         </div>
 
@@ -134,8 +134,8 @@ Crear Producto
         ======================================-->
 
         <div class="form-group">
-            
-            <label>Product Description<sup class="text-danger">*</sup></label>
+                
+            <label>Descripción del producto<sup class="text-danger">*</sup></label>
 
             <textarea
             class="summernote"
@@ -143,8 +143,8 @@ Crear Producto
             required
             ></textarea>
 
-            <div class="valid-feedback">Valid.</div>
-            <div class="invalid-feedback">Please fill out this field.</div>
+            <div class="valid-feedback">Valido.</div>
+            <div class="invalid-feedback">Por favor rellene este campo.</div>
 
         </div>
 
@@ -153,16 +153,16 @@ Crear Producto
         ======================================-->
 
         <div class="form-group">
-            
-            <label>Product Summary<sup class="text-danger">*</sup> Ex: 20 hours of portable capabilities</label>
+                
+            <label>Resumen del producto<sup class="text-danger">*</sup> Ex: 20 horas de autonomia</label>
 
             <input type="hidden" name="inputSummary" value="1">
 
             <div class="form-group__content input-group mb-3 inputSummary">
-                 
+                    
                 <div class="input-group-append">
                     <span class="input-group-text">
-                         <button type="button" class="btn btn-danger" onclick="removeInput(0,'inputSummary')">&times;</button>
+                            <button type="button" class="btn btn-danger" onclick="removeInput(0,'inputSummary')">&times;</button>
                     </span>
                 </div>
 
@@ -174,12 +174,12 @@ Crear Producto
                 onchange="validateJS(event,'paragraphs')"
                 required>
 
-                <div class="valid-feedback">Valid.</div>
-                <div class="invalid-feedback">Please fill out this field.</div>
+                <div class="valid-feedback">Valido.</div>
+                <div class="invalid-feedback">Por favor rellene este campo.</div>
 
             </div>
 
-            <button type="button" class="btn btn-primary mb-2" onclick="addInput(this, 'inputSummary')">Add Summary</button>
+            <button type="button" class="btn btn-primary mb-2" onclick="addInput(this, 'inputSummary')">Agregar Resumen</button>
 
         </div>
 
@@ -188,8 +188,8 @@ Crear Producto
         ======================================-->
 
         <div class="form-group">
-            
-            <label>Product Details<sup class="text-danger">*</sup> Ex: <strong>Title:</strong> Bluetooth, <strong>Value:</strong> Yes</label>
+                
+            <label>Detalles del producto<sup class="text-danger">*</sup> Ex: <strong>Titutlo:</strong> Bluetooth, <strong>Valor:</strong> Si</label>
 
             <input type="hidden" name="inputDetails" value="1">
 
@@ -200,16 +200,16 @@ Crear Producto
                 ======================================--> 
 
                 <div class="col-12 col-lg-6 form-group__content input-group">
-                     
+                        
                     <div class="input-group-append">
                         <span class="input-group-text">
-                             <button type="button" class="btn btn-danger" onclick="removeInput(0,'inputDetails')">&times;</button>
+                                <button type="button" class="btn btn-danger" onclick="removeInput(0,'inputDetails')">&times;</button>
                         </span>
                     </div>
 
                     <div class="input-group-append">
                         <span class="input-group-text">
-                            Title:
+                            Titulo:
                         </span>
                     </div>
 
@@ -221,8 +221,8 @@ Crear Producto
                     onchange="validateJS(event,'paragraphs')"
                     required>
 
-                    <div class="valid-feedback">Valid.</div>
-                    <div class="invalid-feedback">Please fill out this field.</div>
+                    <div class="valid-feedback">Valido.</div>
+                    <div class="invalid-feedback">Por favor rellene este campo.</div>
 
                 </div>
 
@@ -234,7 +234,7 @@ Crear Producto
 
                     <div class="input-group-append">
                         <span class="input-group-text">
-                             Value:
+                                Valor:
                         </span>
                     </div>
 
@@ -246,14 +246,14 @@ Crear Producto
                     onchange="validateJS(event,'paragraphs')"
                     required>
 
-                    <div class="valid-feedback">Valid.</div>
-                    <div class="invalid-feedback">Please fill out this field.</div>
+                    <div class="valid-feedback">Valido.</div>
+                    <div class="invalid-feedback">Por favor rellene este campo.</div>
 
                 </div>
 
             </div>
 
-            <button type="button" class="btn btn-primary mb-2" onclick="addInput(this, 'inputDetails')">Add Details</button>
+            <button type="button" class="btn btn-primary mb-2" onclick="addInput(this, 'inputDetails')">Agregar Detalles</button>
 
         </div>
 
@@ -263,8 +263,8 @@ Crear Producto
         ======================================-->
 
         <div class="form-group">
-            
-            <label>Product Specifications Ex: <strong>Type:</strong> Color, <strong>Values:</strong> Black, Red, White</label>
+                
+            <label>Especificaciones tecnicas del producto Ex: <strong>Tipo:</strong> Color, <strong>Valores:</strong> Negro, Rojo, Blanco</label>
 
             <input type="hidden" name="inputSpecifications" value="1">
 
@@ -275,16 +275,16 @@ Crear Producto
                 ======================================--> 
 
                 <div class="col-12 col-lg-6 form-group__content input-group">
-                     
+                        
                     <div class="input-group-append">
                         <span class="input-group-text">
-                             <button type="button" class="btn btn-danger" onclick="removeInput(0,'inputSpecifications')">&times;</button>
+                                <button type="button" class="btn btn-danger" onclick="removeInput(0,'inputSpecifications')">&times;</button>
                         </span>
                     </div>
 
                     <div class="input-group-append">
                         <span class="input-group-text">
-                            Type:
+                            Tipo:
                         </span>
                     </div>
 
@@ -295,8 +295,8 @@ Crear Producto
                     pattern='[-\\(\\)\\=\\%\\&\\$\\;\\_\\*\\"\\#\\?\\¿\\!\\¡\\:\\,\\.\\0-9a-zA-ZñÑáéíóúÁÉÍÓÚ ]{1,}'
                     onchange="validateJS(event,'paragraphs')">
 
-                    <div class="valid-feedback">Valid.</div>
-                    <div class="invalid-feedback">Please fill out this field.</div>
+                    <div class="valid-feedback">Valido.</div>
+                    <div class="invalid-feedback">Por favor rellene este campo.</div>
 
                 </div>
 
@@ -315,14 +315,14 @@ Crear Producto
                     pattern='[-\\(\\)\\=\\%\\&\\$\\;\\_\\*\\"\\#\\?\\¿\\!\\¡\\:\\,\\.\\0-9a-zA-ZñÑáéíóúÁÉÍÓÚ ]{1,}'
                     onchange="validateJS(event,'paragraphs')">
 
-                    <div class="valid-feedback">Valid.</div>
-                    <div class="invalid-feedback">Please fill out this field.</div>
+                    <div class="valid-feedback">Valido.</div>
+                    <div class="invalid-feedback">Por favor rellene este campo.</div>
 
                 </div>
 
             </div>
 
-            <button type="button" class="btn btn-primary mb-2" onclick="addInput(this, 'inputSpecifications')">Add Specifications</button>
+            <button type="button" class="btn btn-primary mb-2" onclick="addInput(this, 'inputSpecifications')">Agregar Especificaciones</button>
 
         </div>
 
@@ -331,8 +331,8 @@ Crear Producto
         ======================================--> 
 
         <div class="form-group">
-            
-            <label>Product Tags<sup class="text-danger">*</sup></label>
+                
+            <label>Palabras claves<sup class="text-danger">*</sup></label>
 
             <div class="form-group__content">
 
@@ -347,8 +347,8 @@ Crear Producto
                 required
                 >
 
-                <div class="valid-feedback">Valid.</div>
-                <div class="invalid-feedback">Please fill out this field.</div>
+                <div class="valid-feedback">Valido.</div>
+                <div class="invalid-feedback">Por favor rellene este campo.</div>
 
             </div>
 
@@ -359,8 +359,8 @@ Crear Producto
         ======================================-->
 
         <div class="form-group">
-            
-            <label>Product Image<sup class="text-danger">*</sup></label> 
+                
+            <label>Imagen del producto<sup class="text-danger">*</sup></label> 
 
             <div class="form-group__content">
                 
@@ -382,10 +382,10 @@ Crear Producto
                     onchange="validateImageJS(event, 'changeImage')"
                     required>
 
-                    <div class="valid-feedback">Valid.</div>
-                    <div class="invalid-feedback">Please fill out this field.</div>
+                    <div class="valid-feedback">Valido.</div>
+                    <div class="invalid-feedback">Por favor rellene este campo.</div>
 
-                    <label class="custom-file-label" for="imageProduct">Choose file</label>
+                    <label class="custom-file-label" for="imageProduct">Elige el archivo</label>
 
                 </div>
 
@@ -398,13 +398,13 @@ Crear Producto
         Galería del Producto
         ======================================-->    
 
-        <label>Product Gallery: <sup class="text-danger">*</sup></label> 
+        <label>Galería del Producto: <sup class="text-danger">*</sup></label> 
 
         <div class="dropzone mb-3">
             
             <div class="dz-message">
                 
-                 Drop your images here, size max 500px * 500px
+                Suelta tus imágenes aquí, tamaño máximo 500px * 500px
 
             </div>
 
@@ -417,16 +417,16 @@ Crear Producto
         ======================================-->
 
         <div class="form-group">
-             
-            <label>Product Video, Ex: <strong>Type:</strong> YouTube, <strong>Id:</strong> Sl5FaskVpD4</label> 
+                 
+            <label>Video del producto, Ex: <strong>Tipo:</strong> YouTube, <strong>Id:</strong> Sl5FaskVpD4</label> 
 
             <div class="row mb-3">
                 
                 <div class="col-12 col-lg-6 form-group__content input-group mx-0 pr-0">
-                  
+                
                     <div class="input-group-append">
                         <span class="input-group-text">
-                            Type:
+                            Tipo:
                         </span>
                     </div>
 
@@ -434,7 +434,7 @@ Crear Producto
                     class="form-control"                               
                     name="type_video"
                     >
-                        <option value="">Select Platform</option>
+                        <option value="">Seleccione la plataforma</option>
                         <option value="youtube">YouTube</option>
                         <option value="vimeo">Vimeo</option>
 
@@ -458,8 +458,8 @@ Crear Producto
                     onchange="validateJS(event,'paragraphs')"
                     >
 
-                    <div class="valid-feedback">Valid.</div>
-                    <div class="invalid-feedback">Please fill out this field.</div>         
+                    <div class="valid-feedback">Valido.</div>
+                    <div class="invalid-feedback">Por favor rellene este campo.</div>         
 
                 </div>
 
@@ -480,14 +480,14 @@ Crear Producto
                 ======================================-->
                 
                 <div class="col-12 col-lg-3">
-                    
-                    <label>Product Price<sup class="text-danger">*</sup></label>
+                        
+                    <label>Precio de venta<sup class="text-danger">*</sup></label>
 
                     <div class="form-group__content input-group mx-0 pr-0">         
 
                         <div class="input-group-append">
                             <span class="input-group-text">
-                                Price $:
+                                Precio $:
                             </span>
                         </div>
 
@@ -500,89 +500,26 @@ Crear Producto
                         onchange="validateJS(event, 'numbers')"
                         required>
                     
-                        <div class="valid-feedback">Valid.</div>
-                        <div class="invalid-feedback">Please fill out this field.</div>
+                        <div class="valid-feedback">Valido.</div>
+                        <div class="invalid-feedback">Por favor rellene este campo.</div>  
 
                     </div>      
 
                 </div>
-
-                <!--=====================================
-                Precio de envío
-                ======================================-->
-
-                <div class="col-12 col-lg-3">
-                    
-                    <label>Product Shipping<sup class="text-danger">*</sup></label>
-
-                    <div class="form-group__content input-group mx-0 pr-0"> 
-
-                        <div class="input-group-append">
-                            <span class="input-group-text">
-                                Shipping $:
-                            </span>
-                        </div>
-
-                        <input type="number"
-                        class="form-control"
-                        name="shipping"
-                        min="0"
-                        step="any"
-                        pattern="[.\\,\\0-9]{1,}"
-                         onchange="validateJS(event, 'numbers')"
-                        required>
-                    
-                        <div class="valid-feedback">Valid.</div>
-                        <div class="invalid-feedback">Please fill out this field.</div> 
-
-                    </div>     
-
-                </div>
-
-                <!--=====================================
-                Días de entrega
-                ======================================-->
-
-                <!--<div class="col-12 col-lg-3">
-                    
-                    <label>Product Delivery Time<sup class="text-danger">*</sup></label>
-
-                    <div class="form-group__content input-group mx-0 pr-0"> 
-
-                        <div class="input-group-append">
-                            <span class="input-group-text">
-                                Days:
-                            </span>
-                        </div>
-
-                        <input type="number"
-                        class="form-control"
-                        name="delivery_time"
-                        min="0"
-                        pattern="[.\\,\\0-9]{1,}"
-                        onchange="validateJS(event, 'numbers')"
-                        required>
-                    
-                        <div class="valid-feedback">Valid.</div>
-                        <div class="invalid-feedback">Please fill out this field.</div>  
-
-                    </div>    
-
-                </div> -->
 
                  <!--=====================================
                 Stock
                 ======================================-->
 
                 <div class="col-12 col-lg-3">
-                    
-                    <label>Product Stock<sup class="text-danger">*</sup> (Max:100 unit)</label>
+                        
+                    <label>Productos en existencia<sup class="text-danger">*</sup> (Max:100 unidades)</label>
 
                     <div class="form-group__content input-group mx-0 pr-0"> 
 
                         <div class="input-group-append">
                             <span class="input-group-text">
-                                Stock:
+                                En existencia:
                             </span>
                         </div>
 
@@ -595,8 +532,8 @@ Crear Producto
                         onchang onchange="validateJS(event, 'numbers')"
                         required>
                     
-                        <div class="valid-feedback">Valid.</div>
-                        <div class="invalid-feedback">Please fill out this field.</div>  
+                        <div class="valid-feedback">Valido.</div>
+                        <div class="invalid-feedback">Por favor rellene este campo.</div> 
 
                     </div>    
 
@@ -611,91 +548,91 @@ Crear Producto
         ======================================-->
 
         <div class="form-group">
-            
-            <label>Product Offer Ex: <strong>Type:</strong> Disccount, <strong>Percent %:</strong> 25, <strong>End offer:</strong> 30/06/2020</label>
-
-            <div class="row mb-3">
-
-                <!--=====================================
-                Tipo de Oferta
-                ======================================-->
                 
-                <div class="col-12 col-lg-4 form-group__content input-group mx-0 pr-0">
-                    
-                    <div class="input-group-append">
-                        <span class="input-group-text">
-                            Type:
-                        </span>
-                    </div>
+                <label>Oferta del producto Ex: <strong>Tipo:</strong> Descuento, <strong>Porcentaje %:</strong> 25, <strong>Fin de la oferta:</strong> 30/06/2022</label>
 
-                    <select
-                    class="form-control"
-                    name="type_offer"
-                    onchange="changeOffer(event)">
+                <div class="row mb-3">
+
+                    <!--=====================================
+                    Tipo de Oferta
+                    ======================================-->
+                    
+                    <div class="col-12 col-lg-4 form-group__content input-group mx-0 pr-0">
                         
-                        <option value="Discount">Discount</option>
-                        <option value="Fixed">Fixed</option>
+                        <div class="input-group-append">
+                            <span class="input-group-text">
+                                Tipo:
+                            </span>
+                        </div>
 
-                    </select>
+                        <select
+                        class="form-control"
+                        name="type_offer"
+                        onchange="changeOffer(event)">
+                            
+                            <option value="Discount">Descuento</option>
+                            <option value="Fixed">Fijo</option>
 
-                    <div class="valid-feedback">Valid.</div>
-                    <div class="invalid-feedback">Please fill out this field.</div>        
+                        </select>
 
-                </div>
-
-                <!--=====================================
-                El valor de la oferta
-                ======================================-->
-
-                <div class="col-12 col-lg-4 form-group__content input-group mx-0 pr-0">
-                
-                    <div class="input-group-append">
-                       
-                        <span 
-                        class="input-group-text typeOffer">
-                            Percent %:
-                        </span>
+                        <div class="valid-feedback">Valido.</div>
+                        <div class="invalid-feedback">Por favor rellene este campo.</div>        
 
                     </div>
 
-                    <input type="number"
-                    class="form-control"
-                    name="value_offer"
-                    min="0"
-                    step="any"
-                    pattern="[.\\,\\0-9]{1,}"
-                     onchange="validateJS(event, 'numbers')">
+                    <!--=====================================
+                    El valor de la oferta
+                    ======================================-->
 
-                    <div class="valid-feedback">Valid.</div>
-                    <div class="invalid-feedback">Please fill out this field.</div>     
-
-                </div>
-
-                <!--=====================================
-                Fecha de vencimiento de la oferta
-                ======================================-->
-
-                <div class="col-12 col-lg-4 form-group__content input-group mx-0 pr-0">
+                    <div class="col-12 col-lg-4 form-group__content input-group mx-0 pr-0">
                     
-                    <div class="input-group-append">
-                        <span class="input-group-text">
-                            End Offer:
-                        </span>
+                        <div class="input-group-append">
+                           
+                            <span 
+                            class="input-group-text typeOffer">
+                                Porcentaje %:
+                            </span>
+
+                        </div>
+
+                        <input type="number"
+                        class="form-control"
+                        name="value_offer"
+                        min="0"
+                        step="any"
+                        pattern="[.\\,\\0-9]{1,}"
+                         onchange="validateJS(event, 'numbers')">
+
+                        <div class="valid-feedback">Valido.</div>
+                        <div class="invalid-feedback">Por favor rellene este campo.</div>     
+
                     </div>
 
-                    <input type="date"
-                    class="form-control"
-                    name="date_offer">
+                    <!--=====================================
+                    Fecha de vencimiento de la oferta
+                    ======================================-->
 
-                    <div class="valid-feedback">Valid.</div>
-                    <div class="invalid-feedback">Please fill out this field.</div>     
+                    <div class="col-12 col-lg-4 form-group__content input-group mx-0 pr-0">
+                        
+                        <div class="input-group-append">
+                            <span class="input-group-text">
+                                Fin de la Oferta:
+                            </span>
+                        </div>
 
-                </div>
-                  
+                        <input type="date"
+                        class="form-control"
+                        name="date_offer">
 
-            </div>   
+                        <div class="valid-feedback">Valido.</div>
+                        <div class="invalid-feedback">Por favor rellene este campo.</div>     
 
-        </div>
+                    </div>
+                      
+
+                </div>   
+
+            </div>
 
     </div>
 
@@ -706,7 +643,7 @@ Crear Producto
              
             <button
             type="submit"
-            class="ps-btn ps-btn--fullwidth saveBtn">Create Store and Product</button>
+            class="ps-btn ps-btn--fullwidth saveBtn">Crear Tienda y Producto</button>
 
             <?php 
 
