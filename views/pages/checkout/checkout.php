@@ -6,7 +6,7 @@ if(!isset($_SESSION["user"])){
 
         fncSweetAlert(
                 "error",
-                "Please login",
+                "Por favor inicie sesion",
                 "'.$path.'account&login"
             );
 
@@ -16,7 +16,7 @@ if(!isset($_SESSION["user"])){
 
 }else{
 
-    date_default_timezone_set("America/Bogota");
+    date_default_timezone_set("America/Mexico_City");
 
     $time = time();
     
@@ -26,7 +26,7 @@ if(!isset($_SESSION["user"])){
 
             fncSweetAlert(
                 "error",
-                "Error: the token has expired, please login again",
+                "Error: el token a expirado, por favor inicie sesion nuevamente",
                 "'.$path.'account&logout"
             );
 

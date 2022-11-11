@@ -4,7 +4,7 @@
 
         <ul class="breadcrumb">
 
-            <li><a href="/">Home</a></li>
+            <li><a href="/">Inicio</a></li>
 
             <?php if (!empty($showcaseProducts[0]->name_category)): ?>
 

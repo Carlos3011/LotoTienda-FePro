@@ -77,10 +77,10 @@ if(!isset($_SESSION["user"])){
             <div class="ps-section__content">
 
                 <ul class="ps-section__links">
-                    <li  class="active"><a href="<?php echo $path ?>account&wishlist">My Wishlist</a></li>
-                    <li><a href="<?php echo $path ?>account&my-shopping">My Shopping</a></li>
-                    <li><a href="<?php echo $path ?>account&my-store">My Store</a></li>
-                    <li><a href="<?php echo $path ?>account&my-sales">My Sales</a></li>
+                    <li  class="active"><a href="<?php echo $path ?>account&wishlist">Lista de Deseos</a></li>
+                    <li><a href="<?php echo $path ?>account&my-shopping">Mis Compras</a></li>
+                    <li><a href="<?php echo $path ?>account&my-store">Mi Tienda</a></li>
+                    <li><a href="<?php echo $path ?>account&my-sales">Mis Ventas/Trueques</a></li>
                 </ul>
 
                 <!--=====================================
@@ -95,11 +95,11 @@ if(!isset($_SESSION["user"])){
 
                             <tr>               
 
-                                <th>Product name</th>
+                                <th>Nombre del Producto</th>
 
-                                <th>Unit Price</th>
+                                <th>Precio por Unicdad</th>
 
-                                <th>Stock Status</th>
+                                <th>Estado de Inventario</th>
 
                                 <th></th>
 
@@ -174,11 +174,11 @@ if(!isset($_SESSION["user"])){
 
                                        <?php if ($value->stock_product == 0): ?>
 
-                                            <span class="ps-tag ps-tag--out-stock"> Out of stock</span>
+                                            <span class="ps-tag ps-tag--out-stock"> Sin Existencias</span>
 
                                         <?php else: ?>
 
-                                            <span class="ps-tag ps-tag--in-stock">In-stock</span>
+                                            <span class="ps-tag ps-tag--in-stock">En Existencia</span>
                                             
                                         <?php endif ?>
 
@@ -190,7 +190,7 @@ if(!isset($_SESSION["user"])){
                                         onclick="addShoppingCart('<?php echo $value->url_product ?>','<?php echo CurlController::api() ?>', '<?php echo $_SERVER["REQUEST_URI"] ?>', this)"
                                         detailsSC
                                         quantitySC
-                                        >Add to cart</a></td>
+                                        >Agregar al Carrito</a></td>
 
                                     <td>
                                         <a class="btn" onclick="removeWishlist('<?php echo $value->url_product ?>', '<?php echo CurlController::api() ?>', '<?php echo $path; ?>')">

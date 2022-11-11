@@ -65,7 +65,7 @@ Editar Producto
 
             <div class="form-group">
             
-                <label>Url del Producto<sup class="text-danger">*</sup></label>
+                <label>Url del producto<sup class="text-danger">*</sup></label>
 
                 <div class="form-group__content">
                     
@@ -226,7 +226,7 @@ Editar Producto
 
 	                        <div class="input-group-append">
 	                            <span class="input-group-text">
-	                                TituloÑ
+	                                Titulo
 	                            </span>
 	                        </div>
 

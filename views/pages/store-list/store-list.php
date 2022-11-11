@@ -141,7 +141,7 @@ Store List
 
                     <div class="ps-section__header">
 
-                        <p>Showing <?php echo $endAt ?> of <?php echo $totalStore ?> results</p>                  
+                        <p>Mostrando <?php echo $endAt ?> los <?php echo $totalStore ?> resultados</p>                  
 
                         <select class="select2 w-25" data-placeholder="Sort Items" onchange="sortProduct(event)">
 

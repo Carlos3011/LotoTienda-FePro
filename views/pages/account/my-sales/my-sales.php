@@ -20,7 +20,7 @@ if(!isset($_SESSION["user"])){
 
             fncSweetAlert(
                 "error",
-                "Error: the token has expired, please login again",
+                "Error: el token a expirado, por favor inicie sesion nuevamente",
                 "'.$path.'account&logout"
             );
 
@@ -397,7 +397,7 @@ My Account Content
             responsive: true,
             title: {
                 display: true,
-                text: 'Total is <?php echo count($sales) ?> sales from <?php echo $sales[0]->date_created_sale ?> - <?php echo $sales[count($sales)-1]->date_created_sale ?>'
+                text: 'El total es <?php echo count($sales) ?> ventas de <?php echo $sales[0]->date_created_sale ?> - <?php echo $sales[count($sales)-1]->date_created_sale ?>'
             }
                    
         }

@@ -200,7 +200,7 @@ Load
 
                                 <?php if ($item->stock_product == 0): ?>
 
-                                    <div class="ps-product__badge out-stock">Out Of Stock</div>
+                                    <div class="ps-product__badge out-stock">Sin Existencia</div>
 
                                 <?php else: ?>
 
@@ -648,11 +648,11 @@ Load
                             <a class="ps-btn" 
                                 onclick="addShoppingCart('<?php echo $item->url_product ?>','<?php echo CurlController::api() ?>', '<?php echo $_SERVER["REQUEST_URI"] ?>', this)"
                                 detailsSC
-                                quantitySC>Add to cart</a>
+                                quantitySC>Agregar al Carrito</a>
 
                             <ul class="ps-product__actions">
                                 <li><a href="<?php echo $path.$item->url_product ?>"><i class="icon-eye"></i>View</a></li>
-                                <li><a class="btn" onclick="addWishlist('<?php echo $item->url_product ?>','<?php echo CurlController::api() ?>')"><i class="icon-heart"></i> Wishlist</a></li>       
+                                <li><a class="btn" onclick="addWishlist('<?php echo $item->url_product ?>','<?php echo CurlController::api() ?>')"><i class="icon-heart"></i> Mi Lista de Deseos</a></li>       
                             </ul>
 
                         </div>

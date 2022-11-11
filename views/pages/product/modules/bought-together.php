@@ -16,7 +16,7 @@ $newProduct =  CurlController::request($url, $method, $fields, $header)->results
 
 <div class="ps-block--bought-toggether">
 
-    <h4>Frequently Bought Together</h4>
+    <h4>Frecuentemente se Compran Juntos</h4>
 
     <div class="ps-block__content">
 
@@ -180,16 +180,16 @@ $newProduct =  CurlController::request($url, $method, $fields, $header)->results
 
                                 <div class="ps-block__item ps-block__total">
 
-                                    <p>Total Price:<strong> $<?php echo $price1 + $price2  ?></strong></p>
+                                    <p>Precio Total:<strong> $<?php echo $price1 + $price2  ?></strong></p>
 
                                     <a 
                                     class="ps-btn" 
                                     onclick="addShoppingCart2('<?php echo $item->url_product ?>','<?php echo $value->url_product ?>','<?php echo CurlController::api() ?>', '<?php echo $_SERVER["REQUEST_URI"] ?>', this)"
                                     detailsSC
-                                    quantitySC>Add All to cart</a>
+                                    quantitySC>Agregar Todo al Carrito</a>
                                     <a 
                                     class="ps-btn ps-btn--gray ps-btn--outline" 
-                                    onclick="addWishlist2('<?php echo $item->url_product ?>','<?php echo $value->url_product ?>','<?php echo CurlController::api() ?>')">Add All to whishlist</a>
+                                    onclick="addWishlist2('<?php echo $item->url_product ?>','<?php echo $value->url_product ?>','<?php echo CurlController::api() ?>')">Agregar Todo a Mi Lista de Deseos</a>
 
                                 </div>
 

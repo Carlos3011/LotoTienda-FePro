@@ -67,7 +67,7 @@ Load
 
     <div class="container">
 
-        <h3>Mejores categorias del mes</h3>
+        <h3>Mejores Categorias del Mes</h3>
 
         <div class="row">
 

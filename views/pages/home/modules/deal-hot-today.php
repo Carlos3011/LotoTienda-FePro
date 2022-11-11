@@ -132,7 +132,7 @@ if(count($hotProducts)>10){
 
         <div class="ps-block__header">
 
-            <h3>Ofertas calientes del dia</h3>
+            <h3>Ofertas Calientes del Dia</h3>
 
             <div class="ps-block__navigation">
             	<a class="ps-carousel__prev" href=".ps-carousel--deal-hot">

@@ -40,13 +40,13 @@
 
                     if($verificationUser->status == 200){
 
-                        echo '<div class="alert alert-success text-center">Your account has been verified successfully, you can now login</div>';
+                        echo '<div class="alert alert-success text-center">Su cuenta ha sido verificada con éxito, ahora puede iniciar sesión</div>';
                     }
                 }
 
             }else{
 
-                echo '<div class="alert alert-danger text-center">Failed to verify account, email does not exist</div>';
+                echo '<div class="alert alert-danger text-center">No se pudo verificar la cuenta, el correo electrónico no existe</div>';
             
             }
 
@@ -110,7 +110,7 @@
                             required>
 
                             <div class="valid-feedback">Valido.</div>
-                                <div class="invalid-feedback">Por favor complete  el formulario correctamente.</div>
+                            <div class="invalid-feedback">Por favor complete  el formulario correctamente.</div>
 
                             <a href="#resetPassword" data-toggle="modal">Olvidor su contraseña?</a>
 
@@ -185,7 +185,7 @@ Ventana modal para recuperar contraseña
 
       <!-- Modal Header -->
       <div class="modal-header">
-        <h4 class="modal-title">Reset Password</h4>
+        <h4 class="modal-title">Recuperar contraseña</h4>
         <button type="button" class="close" data-dismiss="modal">&times;</button>
       </div>
 
@@ -205,8 +205,8 @@ Ventana modal para recuperar contraseña
                 name="resetPassword"
                 required>
 
-                <div class="valid-feedback">Valid.</div>
-                <div class="invalid-feedback">Please fill in this field correctly.</div>
+                <div class="valid-feedback">Valido.</div>
+                <div class="invalid-feedback">Por favor complete  el formulario correctamente.</div>
 
             </div>
 
@@ -219,7 +219,7 @@ Ventana modal para recuperar contraseña
 
             <div class="form-group submtit">
 
-                <button type="submit" class="ps-btn ps-btn--fullwidth">Submit</button>
+                <button type="submit" class="ps-btn ps-btn--fullwidth">Enviar</button>
 
             </div>
 
@@ -231,7 +231,7 @@ Ventana modal para recuperar contraseña
 
       <!-- Modal footer -->
       <div class="modal-footer">
-        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
       </div>
 
     </div>

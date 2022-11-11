@@ -54,7 +54,7 @@
                         <a class="ps-btn"
                                 onclick="addShoppingCart('<?php echo $item->url_product ?>','<?php echo CurlController::api() ?>', '<?php echo $_SERVER["REQUEST_URI"] ?>', this)"
                                 detailsSC
-                                quantitySC> Add to Cart</a>
+                                quantitySC> Agregar al Carrito</a>
 
                     </div>
 

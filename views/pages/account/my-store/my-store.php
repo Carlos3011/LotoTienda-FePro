@@ -26,10 +26,10 @@ My Account Content
             <div class="ps-section__content" id="vendor-store">
 
                 <ul class="ps-section__links">
-                    <li><a href="<?php echo $path ?>account&wishlist">Lista de deseos</a></li>
+                    <li><a href="<?php echo $path ?>account&wishlist">Lista de Deseos</a></li>
                     <li><a href="<?php echo $path ?>account&my-shopping">Mis Compras</a></li>
                     <li class="active"><a href="<?php echo $path ?>account&my-store">Mi Tienda</a></li>
-                    <li><a href="<?php echo $path ?>account&my-sales">Mis Ventas</a></li>
+                    <li><a href="<?php echo $path ?>account&my-sales">Mis Ventas/Trueques</a></li>
                 </ul>
 
                 <!--=====================================

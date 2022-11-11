@@ -168,7 +168,7 @@ Load
 
                         <?php if ($item->stock_product == 0): ?>
 
-                            <div class="ps-product__badge out-stock">Out Of Stock</div>
+                            <div class="ps-product__badge out-stock">Sin Existencias</div>
 
                         <?php else: ?>
 
@@ -276,7 +276,7 @@ Load
 
                                 ?> 
 
-                                review's)</span>
+                                renseñas)</span>
 
                             </div>
 

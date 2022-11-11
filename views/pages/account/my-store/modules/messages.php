@@ -112,7 +112,7 @@ Ventana modal para responder la pregunta
                 <div class="modal-footer">
 
                     <div class="float-right">
-                        <button type="submit" class="btn btn-warning btn-lg">Send</button>
+                        <button type="submit" class="btn btn-warning btn-lg">Enviar</button>
                     </div>
                    
                 </div>

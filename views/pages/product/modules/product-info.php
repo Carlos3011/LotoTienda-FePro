@@ -116,11 +116,11 @@
 
             <?php if ($item->stock_product == 0): ?>
 
-                Status:<strong class="ps-tag--out-stock"> Sin existencias</strong>
+                Status:<strong class="ps-tag--out-stock"> Sin Existencias</strong>
 
             <?php else: ?>
 
-                Status:<a href=""><strong class="ps-tag--in-stock"> En existencia</strong></a>
+                Status:<a href=""><strong class="ps-tag--in-stock"> En Existencia</strong></a>
                 
             <?php endif ?>
 

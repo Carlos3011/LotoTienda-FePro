@@ -96,7 +96,7 @@ if($item->reviews_product != null){
     	    
     	    <p><?php echo $item->abstract_store ?></p>
 
-    	    <a href="<?php echo $path.$item->url_store ?>">More Products from <?php echo $item->name_store ?></a>
+    	    <a href="<?php echo $path.$item->url_store ?>">Mas Productos de<?php echo $item->name_store ?></a>
 
     	  </div>
 
@@ -169,7 +169,7 @@ if($item->reviews_product != null){
 
                         </select>
 
-                        <span><?php echo count($allReviews) ?> Review's</span>
+                        <span><?php echo count($allReviews) ?> Reseñas</span>
 
                     </div>
 
@@ -223,7 +223,7 @@ if($item->reviews_product != null){
 
                         <div class="ps-block__star">
 
-                            <span><?php echo $i ?> Star</span>
+                            <span><?php echo $i ?> Estrellas</span>
 
                             <div class="ps-progress" data-value="<?php echo round($blockStart[$i]*100/count($allReviews)) ?>">
 
@@ -414,7 +414,7 @@ if($item->reviews_product != null){
                     <input class="form-control" type="text" name="question" placeholder="Have a question? Search for answer?">
 
                     <div class="input-group-append">
-                      <button type="submit" class="btn btn-warning">Send</button>
+                      <button type="submit" class="btn btn-warning">Enviar</button>
                     </div>
                 
                 </div>
