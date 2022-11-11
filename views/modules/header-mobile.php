@@ -16,30 +16,9 @@
 
             <ul class="navigation__extra">
                 
-                <li><a href="/become-vendor">Sell on MarketPlace</a></li>
-                <li><a href="/store-list">Store List</a></li>
-                <li><i class="icon-telephone"></i> Hotline:<strong> 1-800-234-5678</strong></li>    
-
-                <li>
-
-                    <div class="ps-dropdown language">
-                        <a class="btn" onclick="changeLang('en')">
-                            <img src="img/template/en.png" alt="">English
-                        </a>
-
-                        <ul class="ps-dropdown-menu">
-
-                            <li>
-                                <a class="btn" onclick="changeLang('es')">
-                                    <img src="img/template/es.png" alt=""> Español
-                                </a>
-                            </li>
-
-                        </ul>
-
-                    </div>
-
-                </li>
+                <li><a href="/become-vendor">Vender en la LoboTienda</a></li>
+                <li><a href="/store-list">Lista de Tiendas</a></li>
+                <li><i class="icon-telephone"></i> Linea Directa:<strong> 1-800-234-5678</strong></li>    
 
             </ul>
 
@@ -64,7 +43,7 @@
             	<div class="ps-filter--sidebar">
 
 				    <div class="ps-filter__header">
-				        <h3>Categories</h3><a class="ps-btn--close ps-btn--no-boder" href="#"></a>
+				        <h3>Categorias</h3><a class="ps-btn--close ps-btn--no-boder" href="#"></a>
 				    </div>
 
 				    <div class="ps-filter__content">
@@ -209,7 +188,7 @@
                                             </a>
                                             
                                             <!-- Tienda del producto -->
-                                            <p class="mb-0"><strong>Sold by: </strong><?php echo $item->name_store ?></p>
+                                            <p class="mb-0"><strong>Vendido por: </strong><?php echo $item->name_store ?></p>
 
                                             <!-- Detalles del producto -->
                                             <div class="small text-secondary">
@@ -233,22 +212,13 @@
 
                                             </div>
 
-                                            <!-- El precio de envío del producto -->
-                                            <p class="mb-0">
-                                                <strong>Shipping:</strong> $
-                                                <?php echo $item->shipping_product * $value["quantity"] ?>
-
-                                                <?php $totalPriceSC += ($item->shipping_product * $value["quantity"]); ?>
-
-                                            </p>
-
                                             <!-- El precio del producto y la cantidad -->
                                             <p class="mb-0">
 
                                                 <!-- La cantidad del producto -->
                                                 <p class="float-left">
                                                     
-                                                    <strong>Quantity:</strong> <?php echo $value["quantity"] ?>
+                                                    <strong>Cantidad:</strong> <?php echo $value["quantity"] ?>
                                                 
                                                 </p>
 
@@ -305,8 +275,8 @@
 
                                 <h3>Total:<strong>$<?php echo $totalPriceSC ?></strong></h3>
                                 <figure>
-                                    <a class="ps-btn" href="<?php echo $path ?>shopping-cart">View Cart</a>
-                                    <a class="ps-btn" href="<?php echo $path ?>checkout">Checkout</a>
+                                    <a class="ps-btn" href="<?php echo $path ?>shopping-cart">Ver Carrito</a>
+                                    <a class="ps-btn" href="<?php echo $path ?>checkout">Pagar</a>
                                 </figure>
 
                             </div>
@@ -354,7 +324,7 @@
 
                         </div>
                         <div class="ps-block__right"> 
-                            <a href="<?php echo $path ?>account&wishlist">My Acccount</a>
+                            <a href="<?php echo $path ?>account&wishlist">Mi Cuenta</a>
                         </div>
                     </div>
 
@@ -370,8 +340,8 @@
                             <i class="icon-user"></i>
                         </div>
                         <div class="ps-block__right">
-                            <a href="<?php echo $path ?>account&login">Login</a>
-                            <a href="<?php echo $path ?>account&enrollment">Register</a>
+                            <a href="<?php echo $path ?>account&login">Ingresar</a>
+                            <a href="<?php echo $path ?>account&enrollment">Registrar</a>
                         </div>
                     </div>
 

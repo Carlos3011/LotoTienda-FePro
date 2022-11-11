@@ -8,8 +8,8 @@
 
                 <div class="col-xl-5 col-12 ">
                     <div class="ps-form__left">
-                        <h3>Newsletter</h3>
-                        <p>Subcribe to get information about products and coupons</p>
+                        <h3>Boletines</h3>
+                        <p>Suscríbete para obtener información sobre productos y cupones</p>
                     </div>
                 </div>
 
@@ -20,7 +20,7 @@
                         <div class="form-group--nest">
 
                             <input class="form-control" type="email" placeholder="Email address">
-                            <button class="ps-btn">Subscribe</button>
+                            <button class="ps-btn">Subscribir</button>
 
                         </div>
 
