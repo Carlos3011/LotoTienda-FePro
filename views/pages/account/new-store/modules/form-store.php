@@ -6,7 +6,7 @@ Crear tienda
 
  	<!-- Modal Header -->
     <div class="modal-header">
-        <h4 class="modal-title text-center">2. Create Store</h4>
+        <h4 class="modal-title text-center">2. Crear Tienda</h4>
     </div>
 
     <!-- Modal body -->
@@ -24,11 +24,11 @@ Crear tienda
                 
                 <input 
                 type="text"
-                class="form-control"
-                name="nameStore"
-                value="<?= $store[0]->name_store ?>"
-                readonly
-                required>
+        		class="form-control formStore"
+        		name="nameStore"
+        		pattern="[0-9A-Za-zñÑáéíóúÁÉÍÓÚ ]{1,}"
+        		onchange="validateDataRepeat(event, 'store')"
+        		required>
 
                 <div class="valid-feedback">Valido.</div>
                 <div class="invalid-feedback">Por favor rellene este campo.</div>
@@ -48,10 +48,9 @@ Crear tienda
             <div class="form-group__content">
                 
                 <input 
-                type="text"
-                class="form-control"
+            	type="text"
+                class="form-control formStore"
                 name="urlStore"
-                value="<?= $store[0]->url_store ?>"
                 readonly
                 required>
 
@@ -73,13 +72,13 @@ Crear tienda
             <div class="form-group__content">
                 
                 <textarea
-                class="form-control"
+                class="form-control formStore"
                 rows="7"
-                placeholder="Notes about your store in maximum 1000 characters, ex: We are a store specialized in technology..."
+                placeholder="Notas sobre tu tienda en máximo 1000 caracteres, ej: Somos una tienda especializada en tecnología..."
                 name="aboutStore"
                 pattern="[-\\(\\)\\=\\%\\&\\$\\;\\_\\*\\'\\#\\?\\¿\\!\\¡\\:\\,\\.\\0-9a-zA-ZñÑáéíóúÁÉÍÓÚ ]{1,1000}"
                 onchange="validateJS(event,'paragraphs')"
-                required><?= $store[0]->about_store ?></textarea>
+                required></textarea>
 
                 <div class="valid-feedback">Valido.</div>
                 <div class="invalid-feedback">Por favor rellene este campo.</div>
